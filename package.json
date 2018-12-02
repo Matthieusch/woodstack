@@ -45,7 +45,7 @@
     "build-html": "shtml2html -s src/html -d dist/",
     "build-css": "node-sass --output-style=compressed --source-map=dist/css/styles.css.map src/scss/styles.scss dist/css/styles.min.css",
     "js-dir": "make-dir dist/js",
-    "js-bundle": "webpack:js",
+    "js-bundle": "webpack",
     "js-transpile": "babel dist/js/script-bundled.js -o dist/js/script-transpiled.js",
     "js-minify": "terser dist/js/script-transpiled.js -c -m --source-map -o dist/js/script-minified.js",
     "build-js": "run-s js-dir js-bundle js-transpile js-minify",
