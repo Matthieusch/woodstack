@@ -28,16 +28,23 @@
   },
   "scripts": {
     "build-html": "shtml2html -s src/shtml -d dist/",
+    "watch-html": "npm-watch build-html",
+
     "build-css": "node-sass --output-style=compressed --source-map=dist/css/styles.css.map src/scss/styles.scss dist/css/styles.min.css",
+    "watch-css": "npm-watch build-css",
+
     "js-dir": "make-dir dist/js",
     "js-wp": "webpack",
-    "img-svg": "svg-sprite --config svg-sprite.config.json src/images/svg/*.svg",
     "build-js": "run-s js-dir js-wp",
-    "watch-css": "npm-watch build-css",
-    "watch-html": "npm-watch build-html",
     "watch-js": "npm-watch build-js",
-    "build": "run-s clear build-*",
+
+    "img-svg": "svg-sprite --config svg-sprite.config.json src/images/svg/*.svg",
+    
+    "copy-fonts": "copyfiles -u 1 src/fonts/* dist",
+
+    "build": "run-s clear copy-fonts img-svg build-*",
     "watch": "build & run-p watch-* & reload -d dist -b",
+    
     "clear": "del -f dist/"
   },
   "author": "Matthieu Schneider",

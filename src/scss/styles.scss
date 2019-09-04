@@ -3,3 +3,13 @@
 // Libraries
 @import '../../node_modules/bootstrap/scss/bootstrap-reboot';
 @import '../../node_modules/bootstrap/scss/bootstrap-grid';
+
+
+// Utils
+@import 'helpers/mixins';
+@import 'helpers/svg';
+@import 'helpers/fonts';
+
+* {
+  font-family: 'Open Sans';
+}
