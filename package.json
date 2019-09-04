@@ -21,7 +21,7 @@
   "watch": {
     "build-html": {
       "patterns": [
-        "src/html"
+        "src/shtml"
       ],
       "extensions": "shtml",
       "quiet": false
@@ -42,7 +42,7 @@
     }
   },
   "scripts": {
-    "build-html": "shtml2html -s src/html -d dist/",
+    "build-html": "shtml2html -s src/shtml -d dist/",
     "build-css": "node-sass --output-style=compressed --source-map=dist/css/styles.css.map src/scss/styles.scss dist/css/styles.min.css",
     "js-dir": "make-dir dist/js",
     "js-bundle": "webpack",
@@ -53,7 +53,7 @@
     "watch-html": "npm-watch build-html",
     "watch-js": "npm-watch build-js",
     "build": "run-s clear build-*",
-    "watch": "run-s build watch-*",
+    "watch": "build & run-p watch-* & reload -d dist -b",
     "clear": "del -f dist/"
   },
   "author": "Matthieu Schneider",
@@ -62,20 +62,23 @@
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
-    "bootstrap": "^4.1.3",
     "copyfiles": "^2.1.0",
     "del-cli": "^1.1.0",
     "make-dir-cli": "^1.0.0",
     "node-sass": "^4.9.3",
     "npm-run-all": "^4.1.5",
     "npm-watch": "^0.4.0",
+    "reload": "^3.0.1",
     "shtml2html": "^1.0.5",
     "terser": "^3.10.11",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "1.9.1",
+    "popper.js": "^1.14.7",
     "@babel/polyfill": "^7.0.0",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.15"
   }
 }
