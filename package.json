@@ -3,21 +3,6 @@
   "version": "1.0.0",
   "description": "Simple npm stack workflow for Front-end Developper",
   "private": true,
-  "babel": {
-    "presets": [
-      [
-        "@babel/env",
-        {
-          "targets": {
-            "browsers": [
-              "last 2 versions",
-              "safari >= 7"
-            ]
-          }
-        }
-      ]
-    ]
-  },
   "watch": {
     "build-html": {
       "patterns": [
@@ -45,11 +30,9 @@
     "build-html": "shtml2html -s src/shtml -d dist/",
     "build-css": "node-sass --output-style=compressed --source-map=dist/css/styles.css.map src/scss/styles.scss dist/css/styles.min.css",
     "js-dir": "make-dir dist/js",
-    "js-bundle": "webpack",
-    "js-transpile": "babel dist/js/script-bundled.js -o dist/js/script-transpiled.js",
-    "js-minify": "terser dist/js/script-transpiled.js -c -m --source-map -o dist/js/script-minified.js",
+    "js-wp": "webpack",
     "img-svg": "svg-sprite --config svg-sprite.config.json src/images/svg/*.svg",
-    "build-js": "run-s js-dir js-bundle js-transpile js-minify",
+    "build-js": "run-s js-dir js-wp",
     "watch-css": "npm-watch build-css",
     "watch-html": "npm-watch build-html",
     "watch-js": "npm-watch build-js",
@@ -60,9 +43,10 @@
   "author": "Matthieu Schneider",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
+    "babel-loader": "^8.0.6",
+    "babel-minify-webpack-plugin": "^0.3.1",
     "copyfiles": "^2.1.0",
     "del-cli": "^1.1.0",
     "make-dir-cli": "^1.0.0",
@@ -72,7 +56,6 @@
     "reload": "^3.0.1",
     "shtml2html": "^1.0.5",
     "svg-sprite": "^1.5.0",
-    "terser": "^3.10.11",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2"
   },
