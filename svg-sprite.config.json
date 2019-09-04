@@ -1,0 +1,11 @@
+{
+    "dest": "./",
+    "log": "verbose",
+    "mode": {
+        "defs": {
+            "dest": "dist/images",
+            "sprite": "sprite.defs.svg",
+            "inline": true
+        }
+    }
+}

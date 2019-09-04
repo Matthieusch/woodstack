@@ -2,6 +2,14 @@
 
     <main class="container">
         <h1>Welcome to WoodStack!</h1>
+
+        <h2>Icons from external SVG sprite inlined with svg4everybody</h2>
+        <svg viewBox="0 0 473.93 473.93" class="svg-happy-dims" width="50">
+            <use xlink:href="images/sprite.defs.svg#happy"></use>
+        </svg>
+        <svg viewBox="0 0 473.93 473.93" class="svg-happy-dims" width="50">
+            <use xlink:href="images/sprite.defs.svg#in-love"></use>
+        </svg>
     </main>
 
 <!--#include file="partials/footer.shtml" -->

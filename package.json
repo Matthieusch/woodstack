@@ -48,6 +48,7 @@
     "js-bundle": "webpack",
     "js-transpile": "babel dist/js/script-bundled.js -o dist/js/script-transpiled.js",
     "js-minify": "terser dist/js/script-transpiled.js -c -m --source-map -o dist/js/script-minified.js",
+    "img-svg": "svg-sprite --config svg-sprite.config.json src/images/svg/*.svg",
     "build-js": "run-s js-dir js-bundle js-transpile js-minify",
     "watch-css": "npm-watch build-css",
     "watch-html": "npm-watch build-html",
@@ -70,15 +71,17 @@
     "npm-watch": "^0.4.0",
     "reload": "^3.0.1",
     "shtml2html": "^1.0.5",
+    "svg-sprite": "^1.5.0",
     "terser": "^3.10.11",
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "bootstrap": "^4.3.1",
     "jquery": "1.9.1",
+    "lodash": "^4.17.15",
     "popper.js": "^1.14.7",
-    "@babel/polyfill": "^7.0.0",
-    "lodash": "^4.17.15"
+    "svg4everybody": "^2.1.9"
   }
 }
