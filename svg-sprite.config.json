@@ -1,6 +1,6 @@
 {
     "dest": "./",
-    "log": "info",
+    "log": "",
     "mode": {
         "defs": {
             "dest": "dist/images",
