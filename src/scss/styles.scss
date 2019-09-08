@@ -5,11 +5,143 @@
 @import '../../node_modules/bootstrap/scss/bootstrap-grid';
 
 
-// Utils
+// Helpers
+@import 'helpers/variables';
 @import 'helpers/mixins';
 @import 'helpers/svg';
 @import 'helpers/fonts';
+@import 'helpers/rem';
+@import 'helpers/spacing';
 
-* {
-  font-family: 'Open Sans';
+$rem-baseline: 10px;
+
+html {
+  font-family: $main-font;
+  @include rem-baseline;
+}
+
+body {
+  color: $baltic-sea;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.button {
+  background: $anakiwa;
+  color: $baltic-sea;
+  display: block;
+  font-family: $secondary-font;
+  font-size: rem(18px);
+  font-weight: bold;
+  line-height: (50 / 18);
+  padding: rem(0 20px);
+  text-align: center;
+  transition: all .5s;
+  transition-timing-function: cubic-bezier(.2, 3, .4, 1);
+  user-select: none;
+  
+  @include media-breakpoint-up(sm) {
+    min-width: rem(260px);
+    padding: rem(0 30px);
+  }
+
+  &:hover{
+    transform: scale(1.1, 1.1);
+  }
+
+  &:active{
+      transform: scale(1.05, 1.05);
+  }
+}
+
+.footer {
+  background-color: $red;
+
+  &__logo {
+    max-width: rem(290px);
+    width: rem(314px);
+  }
+
+  &__text {
+    font-size: rem(14px);
+    line-height: (22 / 14);
+    margin-bottom: 0;
+  }
+}
+
+.contact {
+  @include fx(row nowrap, flex-start);
+
+  @include media-breakpoint-up(lg) {
+    justify-content: center;
+  }
+
+  &__separator {
+    background: $baltic-sea;
+    display: none;
+    height: rem(60px);
+    width: rem(2px);
+
+    @include media-breakpoint-up(sm) {
+      display: block;
+    }
+  }
+
+  &__link {
+    display: block;
+    transition: color .25s ease-in-out;
+    margin-left: rem(10px);
+
+    &:hover {
+      color: #fff;
+    }
+    
+    svg {
+      width: rem(40px);
+    }
+
+    path {
+      fill: currentColor;
+    }
+
+    @include media-breakpoint-up(sm) {
+      margin-left: rem(15px);
+
+      svg {
+        width: rem(60px);
+      }
+    }
+  }
+}
+
+.nav {
+  &__link {
+    display: block;
+    @include fx();
+    font-size: rem(14px);
+    font-weight: bold;
+    line-height: (22 / 14);
+
+    @include before() {
+      background: $baltic-sea;
+      height: rem(2px);
+      margin-right: rem(10px);
+      width: rem(18px);
+    }
+  }
+
+  ul {
+    @include fx(row nowrap, flex-end);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }

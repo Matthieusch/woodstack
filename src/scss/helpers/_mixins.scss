@@ -1,3 +1,40 @@
+
+// =============================================================================
+// ::before, ::after
+// =============================================================================
+@mixin pseudo-element($content:'', $display:block) {
+  content:$content;
+  display:$display;
+  @content;
+}
+
+@mixin after($content:'', $display:block) {
+  &::after {
+      @include pseudo-element($content, $display) {
+          @content;
+      }
+  }
+}
+
+@mixin before($content:'', $display:block) {
+  &::before {
+      @include pseudo-element($content, $display) {
+          @content;
+      }
+  }
+}
+
+// =============================================================================
+// String Flexbox
+// =============================================================================
+
+@mixin fx($ff: row nowrap, $jc: center, $ai: center) {
+  display: flex;
+  flex-flow: $ff;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
 // =============================================================================
 // String Replace
 // =============================================================================
