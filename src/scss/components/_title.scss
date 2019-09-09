@@ -1,0 +1,19 @@
+.c-title {
+  color: $crimson;
+  display: block;
+  font-size: rem(28px);
+  font-style: normal;
+  line-height: 1;
+  
+  &--crimson {
+    color: $crimson;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: rem(36px);
+  }
+}

@@ -1,0 +1,47 @@
+.c-button {
+  background: $anakiwa;
+  color: $baltic-sea;
+  display: block;
+  font-family: $secondary-font;
+  font-size: rem(18px);
+  font-weight: bold;
+  line-height: (50 / 18);
+  padding: rem(0 20px);
+  text-align: center;
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.2, 3, 0.4, 1);
+  user-select: none;
+
+  @include media-breakpoint-up(sm) {
+    min-width: rem(260px);
+    padding: rem(0 30px);
+  }
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  &:active {
+    transform: scale(1.05, 1.05);
+  }
+
+  &--menu {
+    background: $baltic-sea;
+    color: #fff;
+    min-width: rem(142px);
+
+    @include media-breakpoint-up(sm) {
+      min-width: rem(180px);
+    }
+  }
+  
+  &--active {
+    color: $baltic-sea;
+    background: #fff;
+  }
+
+  &--header {
+    margin: 0 auto;
+    width: rem(260px);
+  }
+}

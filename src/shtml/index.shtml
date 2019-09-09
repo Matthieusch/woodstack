@@ -1,15 +1,144 @@
 <!--#include file="partials/header.shtml" -->
 
-    <main class="container">
-        <h1>Welcome to WoodStack!</h1>
+    <main>
+        <section class="disclaimer p-t-135 p-b-90">
+            <div class="container">
+                <div class="disclaimer__anim disclaimer__anim--left" aria-hidden="true">
+                    <div class="c-line c-line--small"></div>
+                    <div class="c-line c-line--medium"></div>
+                    <div class="c-line"></div>
+                </div>
+                <h2 class="c-title c-title--crimson m-b-20">
+                    Une livraison à la hauteur de vos exigences
+                </h2>
+                <div class="row m-b-30">
+                    <div class="col-12 col-md-8 offset-md-2">
+                        <p class="c-text c-text--big c-square c-square--2">
+                            Nous vous proposons un process unifié et un engagement quotidien pour <strong>respecter délais et sécurité</strong> dans la livraison et acheminer tout type de marchandise dans des conditions optimales :
+                        </p>
+                    </div>
+                </div>
+                <ul class="disclaimer__list">
+                    <li class="disclaimer__item">
+                        <svg class="m-b-15" aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#marchandise--package"></use>
+                        </svg>
+                        <p class="c-text c-text--medium"><strong>Colis standard</strong></p>
+                    </li>
+                    <li class="disclaimer__item">
+                        <svg class="m-b-15" aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#marchandise--sensible"></use>
+                        </svg>
+                        <p class="c-text c-text--medium"><strong>Produits sensibles</strong></p>
+                    </li>
+                    <li class="disclaimer__item">
+                        <svg class="m-b-15" aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#marchandise--apple"></use>
+                        </svg>
+                        <p class="c-text c-text--medium"><strong>Denrées alimentaires</strong></p>
+                    </li>
+                    <li class="disclaimer__item">
+                        <svg class="m-b-15" aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#marchandise--pallet"></use>
+                        </svg>
+                        <p class="c-text c-text--medium"><strong>Marchandises<br>sur palettes</strong></p>
+                    </li>
+                    <li class="disclaimer__item">
+                        <svg class="m-b-15" aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#marchandise--heavy"></use>
+                        </svg>
+                        <p class="c-text c-text--medium"><strong>Gros volumes</strong></p>
+                    </li>
+                </ul>
+                <div class="disclaimer__anim disclaimer__anim--right" aria-hidden="true">
+                    <div class="c-line c-line--small"></div>
+                    <div class="c-line c-line--big"></div>
+                    <div class="c-line"></div>
+                </div>
+            </div>
+        </section>
 
-        <h2>Icons from external SVG sprite inlined with svg4everybody</h2>
-        <svg viewBox="0 0 473.93 473.93" class="svg-happy-dims" width="50">
-            <use xlink:href="images/sprite.defs.svg#happy"></use>
-        </svg>
-        <svg viewBox="0 0 473.93 473.93" class="svg-happy-dims" width="50">
-            <use xlink:href="images/sprite.defs.svg#in-love"></use>
-        </svg>
+        <section class="offers">
+            <div class="container">
+                <div class="row">
+                    <div class="card col-12 col-md-6 col-lg-4">
+                        <h2 class="card__title card__title--1 m-b-15">
+                            <svg aria-label="Regular">
+                                <use data-href="images/sprite.defs.svg#r--black"></use>
+                            </svg>
+                            <span aria-hidden="true">EGULAR</span>
+                        </h2>
+                        <p class="card__text c-text c-text--high c-text--center p-b-15 m-b-70">
+                            <strong>Votre livraison classique<br>n’importe où en France</strong>
+                        </p>
+                        <ul class="card__list m-b-60">
+                            <li class="c-list-item c-list-item--big c-text m-b-10">
+                                <span>Un enlèvement sur demande, ponctuel, urgent ou programmé</span>
+                            </li>
+                            <li class="c-list-item c-list-item--big c-text m-b-10">
+                                <span>La transmission en ligne et la prise en compte en temps réel des instructions de livraison</span>
+                            </li>
+                            <li class="c-list-item c-list-item--big c-text m-b-10">
+                                <span>Un service personnalisé : consignes particulières, photo en cas d’absence ou d’avarie, prise en compte d’instructions de dernière minute, …</span>
+                            </li>
+                            <li class="c-list-item c-list-item--big c-text m-b-10">
+                                <span>Des livraisons qui viennent s’inscrire dans des tournées aux trajets optimisés</span>
+                            </li>
+                            <li class="c-list-item c-list-item--big c-text m-b-10">
+                                <span>La preuve de livraison adressée immédiatement sur votre boîte mail pour des livraisons conformes</span>
+                            </li>
+                        </ul>
+                        <a href="mailto:" class="c-button c-button--header">Contactez-nous</a>
+                    </div>
+                    <div class="card card--baltic card--contrast col-md-6 col-12 col-lg-4">
+                        <h2 class="card__title card__title--2 m-b-15">
+                            <svg aria-label="Regular">
+                                <use data-href="images/sprite.defs.svg#r--red"></use>
+                            </svg>
+                            <span aria-hidden="true">ON DEMAND</span>
+                        </h2>
+                        <p class="card__text c-text c-text--high c-text--center p-b-15 m-b-70">
+                            <strong>Votre transport express<br>suivi de bout en bout</strong>
+                        </p>
+                        <p class="c-text c-text--medium c-text--center m-b-20">
+                            <b>Profitez de tous les avantages de la<br>livraison classique</b> <em>R EGULAR +</em>
+                        </p>
+                        <ul class="card__list m-b-95">
+                            <li class="c-list-item c-list-item--contrast c-list-item--big c-text m-b-10">
+                                <span>L’accès depuis votre interface par votre client destinataire au suivi intégral du colis en temps réel à chacune des étapes de la livraison pour une réactivité immédiate en cas d’imprévu</span>
+                            </li>
+                            <li class="c-list-item c-list-item--contrast c-list-item--big c-text m-b-10">
+                                <span>Une information du destinataire en cas d’absence et prise en compte des nouvelles dispositions de livraison</span>
+                            </li>
+                        </ul>
+                        <a href="mailto:" class="c-button c-button--header">Contactez-nous</a>
+                    </div>
+                    <div class="card card--red col-12 col-lg-4">
+                        <h2 class="card__title card__title--3 m-b-15">
+                            <svg aria-label="Regular">
+                                <use data-href="images/sprite.defs.svg#r--black"></use>
+                            </svg>
+                            <span aria-hidden="true">QUICKLY</span>
+                        </h2>
+                        <p class="card__text c-text c-text--high c-text--center p-b-15 m-b-70">
+                            <strong>Pro-activité et réactivité pour<br class="d-none">un transport urgent maitrisé</strong>
+                        </p>
+                        <p class="c-text c-text--medium c-text--center m-b-20">
+                            <b>Profitez de tous les avantages de la livraison classique</b> <em>R ON DEMAND +</em>
+                        </p>
+                        <ul class="card__list m-b-95">
+                            <li class="c-list-item c-list-item--big c-text m-b-10">
+                                <span>La prise en compte de votre degré d’urgence pour concilier rapidité et optimisation des coûts</span>
+                            </li>
+                            <li class="c-list-item c-list-item--big c-text m-b-10">
+                                <span>L’assurance d’une gestion fiable et sécurisée de vos livraisons complexes et de vos opérations spéciales (lancement de produit, nouveaux clients…)</span>
+                            </li>
+                        </ul>
+                        <a href="mailto:" class="c-button c-button--header">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 <!--#include file="partials/footer.shtml" -->

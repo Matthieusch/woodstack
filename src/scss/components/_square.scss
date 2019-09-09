@@ -1,0 +1,28 @@
+.c-square {
+    position: relative;
+
+    @include before() {
+        background: $gallery;
+        height: rem(300px);
+        width: rem(300px);
+        z-index: -1;
+    }
+
+    &--white {
+        &::before {
+            background: #fff;
+        }
+    }
+
+    &--1 {
+        &::before {
+            @include position(rem(25px), auto, auto, rem(30px));
+        }
+    }
+
+    &--2 {
+        &::before {
+            @include position(rem(-85px), rem(30px), auto, auto);
+        }
+    }
+}

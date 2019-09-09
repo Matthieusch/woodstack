@@ -1,0 +1,20 @@
+.c-text {
+  font-size: rem(14px);
+  line-height: 1.27;
+  
+  &--center {
+    text-align: center;
+  }
+
+  &--medium {
+    font-size: rem(16px);
+  }
+
+  &--high {
+    font-size: rem(20px);
+  }
+
+  &--big {
+    font-size: rem(22px);
+  }
+}

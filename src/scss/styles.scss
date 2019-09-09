@@ -13,14 +13,23 @@
 @import 'helpers/rem';
 @import 'helpers/spacing';
 
+// Components
+@import 'components/button';
+@import 'components/square';
+@import 'components/title';
+@import 'components/text';
+@import 'components/line';
+@import 'components/card';
+@import 'components/list-item';
+
 $rem-baseline: 10px;
 
 html {
-  font-family: $main-font;
   @include rem-baseline;
 }
 
 body {
+  font-family: $main-font;
   color: $baltic-sea;
 }
 
@@ -34,31 +43,211 @@ a {
   }
 }
 
-.button {
-  background: $anakiwa;
-  color: $baltic-sea;
-  display: block;
-  font-family: $secondary-font;
-  font-size: rem(18px);
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+strong {
   font-weight: bold;
-  line-height: (50 / 18);
-  padding: rem(0 20px);
-  text-align: center;
-  transition: all .5s;
-  transition-timing-function: cubic-bezier(.2, 3, .4, 1);
-  user-select: none;
-  
+}
+
+.menu {
+  margin-bottom: rem(30px);
+
+  &__list {
+    @include fx(row nowrap, flex-end);
+  }
+
+  &__item:not(:first-child) {
+    margin-left: rem(6px);
+  }
+
   @include media-breakpoint-up(sm) {
-    min-width: rem(260px);
-    padding: rem(0 30px);
+    .menu *:last-child{
+      margin-right: rem(30px);
+    }
   }
 
-  &:hover{
-    transform: scale(1.1, 1.1);
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+  }
+}
+
+.header {
+  background: $gallery;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+
+  & > * {
+    position: relative;
+    z-index: 1;
   }
 
-  &:active{
-      transform: scale(1.05, 1.05);
+  @include before() {
+    background: #fff;
+    height: rem(240px);
+    @include position(auto, 0, 0, 0);
+    transform: skew(0, -2.6deg);
+    z-index: 0;
+  }
+
+  @include after() {
+    background: #fff;
+    height: rem(150px);
+    @include position(auto, 0, 0, 0);
+    z-index: 0;
+  }
+
+  &__logo {
+    display: block;
+    width: rem(229px);
+  }
+
+  &__title {
+    font-size: rem(35px);
+    text-align: center;
+
+    strong {
+      font-weight: normal;
+      line-height: 1;
+    }
+
+    @include media-breakpoint-up(sm) {
+      font-size: rem(45px);
+
+      strong {
+        display: block;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: rem(60px);
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: rem(62px);
+      text-align: left;
+
+      strong {
+        margin-left: rem(85px);
+      }
+    }
+  }
+
+  &__illustration {
+    display: block;
+    margin: 0 0 rem(10px) calc((806px - 100vw) / -2 - (#{$grid-gutter-width} / 2));
+    width: rem(806px);
+    
+    @include media-breakpoint-up(sm) {
+      margin-left: calc((806px - #{map-get($container-max-widths, "sm")}) / -2 - (#{$grid-gutter-width} / 2));
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-left: calc((806px - #{map-get($container-max-widths, "md")}) / -2 - (#{$grid-gutter-width} / 2));
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.disclaimer {
+  overflow: hidden;
+  
+  & > * {
+    position: relative;
+  }
+
+  &__anim {
+    position: relative;
+
+    &--left {
+      @include position(rem(165px), auto, auto, rem(15px));
+      transform: translateX(-100%);
+
+      .c-line:first-child {
+        margin: 0 0 rem(170px) rem(120px);
+      }
+      .c-line:nth-child(3) {
+        margin: rem(30px) 0 0 rem(260px);
+      }
+    }
+
+    &--right {
+      @include position(rem(-65px), 0, auto, auto);
+      transform: translateX(100%);
+
+      .c-line:first-child {
+        margin: 0 0 rem(90px) rem(25px);
+      }
+      .c-line:nth-child(3) {
+        margin: rem(25px) 0 0 rem(80px);
+      }
+    }
+  }
+
+  &__list {
+    @include fx(row wrap, center, flex-start);
+  }
+
+  &__item {
+    flex: 1;
+    text-align: center;
+    margin: 0 rem(50px) rem(20px);
+
+    svg {
+      display: inline-block;
+      height: rem(95px);
+      width: auto;
+
+      path {
+        fill: $baltic-sea;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &__item {
+      &:nth-child(4),
+      &:nth-child(5) {
+        flex: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__list {
+      @include fx(row nowrap, space-between, flex-start);
+    }
+
+    &__item {
+      margin-left: 0;
+      margin-right: 0;
+
+      &:nth-child(4),
+      &:nth-child(5) {
+        flex: 1;
+      }
+    }
+  }
+}
+
+.offers {
+  overflow: hidden;
+  
+  @include media-breakpoint-up(md) {
+    background: $red;
+  }
+  
+  @include media-breakpoint-up(lg) {
+    background: transparent;
+    padding-bottom: rem(90px);
   }
 }
 
@@ -123,25 +312,7 @@ a {
 }
 
 .nav {
-  &__link {
-    display: block;
-    @include fx();
-    font-size: rem(14px);
-    font-weight: bold;
-    line-height: (22 / 14);
-
-    @include before() {
-      background: $baltic-sea;
-      height: rem(2px);
-      margin-right: rem(10px);
-      width: rem(18px);
-    }
-  }
-
   ul {
     @include fx(row nowrap, flex-end);
-    list-style: none;
-    margin: 0;
-    padding: 0;
   }
 }

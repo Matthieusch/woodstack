@@ -4,10 +4,38 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>WoodStack!</title>
+        <title>ROAZ Deliverry | Votre livraison de colis sur Rennes et en France</title>
         <link rel="stylesheet" href="css/styles.min.css">
     </head>
     <body>
-        <header class="container">
-            <p>header here!</p>
+        <header class="header p-t-30">
+            <div class="container">
+                <nav class="menu" role="navigation" aria-label="Menu principal">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="/" class="c-button c-button--menu c-button--active" aria-current="page">L'offre</a></li>
+                        <li class="menu__item"><a href="/" class="c-button c-button--menu">Carrières</a></li>
+                    </ul>
+                </nav>
+
+                <h1 class="header__title c-square c-square--white c-square--1">
+                    <svg class="header__logo m-b-30" aria-label="Roaz Delivery">
+                        <title>Roaz Delivery</title>
+                        <use data-href="images/sprite.defs.svg#logo"></use>
+                    </svg>
+                    <strong>Votre livraison de colis</strong>
+                    <strong>sur Rennes et en France</strong>
+                    <em class="c-title c-title--crimson c-title--center m-t-10 m-b-30">Rapide, fiable et écologique.</em>
+                </h1>
+
+                <p class="c-text c-text--big c-text--center m-b-100">
+                    Parce que chaque livraison est unique, Roaz delivery s’adapte à vos besoins en toutes circonstances.
+                </p>
+
+                <svg class="header__illustration m-b-10" aria-label="Illustration d'une ville et du travail de Roaz Delivery au sein de celle-ci">
+                    <title>Roaz Delivery</title>
+                    <use data-href="images/sprite.defs.svg#header--home"></use>
+                </svg>
+
+                <a href="mailto:" class="c-button c-button--header">Contactez-nous</a>
+            </div>
         </header>

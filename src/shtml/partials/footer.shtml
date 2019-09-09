@@ -8,7 +8,7 @@
                     </div>
                     <div class="col-12 col-lg-8 justify-content-center m-b-30">
                         <div class="contact">
-                            <a href="mailto:" class="button">Contactez-nous</a>
+                            <a href="mailto:" class="c-button">Contactez-nous</a>
                             <div class="contact__separator m-l-30 m-r-15" aria-hidden="true"></div>
                             <a href="" class="contact__link" title="Suivez-nous sur Facebook">
                                 <svg aria-hidden="true">
@@ -35,7 +35,7 @@
                     <nav class="col nav">
                         <ul>
                             <li>
-                                <a href="mentions-legales.html" class="nav__link" title="Accéder à nos mentions légales">Mentions légales</a>
+                                <a href="mentions-legales.html" class="nav__link c-text c-list-item" title="Accéder à nos mentions légales"><b>Mentions légales</b></a>
                             </li>
                         </ul>
                     </nav>

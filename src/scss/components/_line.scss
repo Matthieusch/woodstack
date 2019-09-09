@@ -1,0 +1,17 @@
+.c-line {
+    background: $baltic-sea;
+    height: rem(2px);
+    width: rem(96px);
+
+    &--small {
+        width: rem(30px);
+    }
+
+    &--medium {
+        width: rem(300px);
+    }
+
+    &--big {
+        width: rem(505px);
+    }
+}

@@ -1,7 +1,51 @@
+// =============================================================================
+// Position absolute/relative, en pourcentage par defaut (autre unité possible)
+// =============================================================================
+
+@mixin position($top: null, $right: null, $bottom: null, $left: null, $position: absolute) {
+  position: $position;
+  @if ($top != null) {
+      @if ($top == auto) {
+          top: auto;
+      } @else if unitless($top) {
+          top: $top*1%;
+      } @else {
+          top: $top;
+      }
+  }
+  @if ($right != null and ($position == 'absolute' or $position == 'fixed')) {
+      @if ($right == auto) {
+          right: auto;
+      } @else if unitless($right) {
+          right: $right*1%;
+      } @else {
+          right: $right;
+      }
+  }
+  @if ($bottom != null and ($position == 'absolute' or $position == 'fixed')) {
+      @if ($bottom == auto) {
+          bottom: auto;
+      } @else if unitless($bottom) {
+          bottom: $bottom*1%;
+      } @else {
+          bottom: $bottom;
+      }
+  }
+  @if ($left != null) {
+      @if ($left == auto) {
+          left: auto;
+      } @else if unitless($left) {
+          left: $left*1%;
+      } @else {
+          left: $left;
+      }
+  }
+}
 
 // =============================================================================
 // ::before, ::after
 // =============================================================================
+
 @mixin pseudo-element($content:'', $display:block) {
   content:$content;
   display:$display;
