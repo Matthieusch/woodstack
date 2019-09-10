@@ -38,6 +38,13 @@
       ],
       "extensions": "woff,woff2",
       "quiet": false
+    },
+    "build-favicon": {
+      "patterns": [
+        "src/favicon/"
+      ],
+      "extensions": "*",
+      "quiet": false
     }
   },
   "scripts": {
@@ -56,6 +63,8 @@
     "build-images": "run-s imagemin svg-sprite svgo",
     "build-fonts": "copyfiles -u 1 src/fonts/* dist",
     "watch-fonts": "npm-watch build-fonts",
+    "build-favicon": "copyfiles -u 1 src/favicon/* dist",
+    "watch-favicon": "npm-watch build-favicon",
     "build": "run-s clear build-*",
     "watch": "build & run-p watch-* & reload -d dist -b",
     "clear": "del -f dist/"
