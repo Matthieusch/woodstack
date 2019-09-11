@@ -3,6 +3,10 @@
     height: rem(2px);
     width: rem(96px);
 
+    &--contrast {
+        background: #fff;
+    }
+
     &--small {
         width: rem(30px);
     }

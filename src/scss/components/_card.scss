@@ -13,11 +13,37 @@
     
     &--contrast {
         color: #fff;
+    }
 
-        .card__text {
-            &::after {
-                background: #fff;
-            }
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(3) {
+        @include before() {
+            background: $gallery;
+            @include position(0, auto, 0, 0);
+            transform: translateX(-100%);
+            width: 50vw;
+        }
+
+        @include after() {
+            background: $gallery;
+            @include position(0, 0, 0, auto);
+            transform: translateX(100%);
+            width: 50vw;
+        }
+    }
+
+    &:nth-child(2) {
+        &::before,
+        &::after {
+            background: $baltic-sea;
+        }
+    }
+
+    &:nth-child(3) {
+        &::before,
+        &::after {
+            background: $red;
         }
     }
 
@@ -48,10 +74,17 @@
     @include media-breakpoint-up(lg) {
         transform: translateY(rem(90px));
 
+        &:first-child {
+            &::after {
+                content: none;
+            }
+        }
+
         &:nth-child(2) {
             transform: translateY(rem(45px));
 
-            &::before {
+            &::before,
+            &::after {
                 content: none;
             }
         }
@@ -107,18 +140,6 @@
             span {
                 margin-left: rem(-60px);
             }
-        }
-    }
-
-    &__text {
-        position: relative;
-
-        @include after() {
-            background: $baltic-sea;
-            height: rem(2px);
-            @include position(auto, auto, 0, 50%);
-            transform: translateX(-50%);
-            width: rem(40px);
         }
     }
 }

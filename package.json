@@ -45,6 +45,13 @@
       ],
       "extensions": "*",
       "quiet": false
+    },
+    "build-htaccess": {
+      "patterns": [
+        "src/"
+      ],
+      "extensions": ".htaccess",
+      "quiet": false
     }
   },
   "scripts": {
@@ -57,7 +64,7 @@
     "build-js": "run-s js-dir js-wp",
     "watch-js": "npm-watch build-js",
     "svg-sprite": "svg-sprite --config svg-sprite.config.json src/images/svg/*.svg",
-    "svgo" : "svgo dist/images/sprite.defs.svg",
+    "svgo": "svgo dist/images/sprite.defs.svg",
     "imagemin": "imagemin src/images/*.{png,jpg,jpeg,gif} --out-dir=dist/images",
     "watch-images": "npm-watch build-images",
     "build-images": "run-s imagemin svg-sprite svgo",
@@ -65,6 +72,8 @@
     "watch-fonts": "npm-watch build-fonts",
     "build-favicon": "copyfiles -u 1 src/favicon/* dist",
     "watch-favicon": "npm-watch build-favicon",
+    "build-htaccess": "copyfiles -u 1 src/.htaccess dist",
+    "watch-htaccess": "npm-watch build-htaccess",
     "build": "run-s clear build-*",
     "watch": "build & run-p watch-* & reload -d dist -b",
     "clear": "del -f dist/"
@@ -96,6 +105,7 @@
     "jquery": "1.9.1",
     "lodash": "^4.17.15",
     "popper.js": "^1.14.7",
-    "svg4everybody": "^2.1.9"
+    "svg4everybody": "^2.1.9",
+    "wowjs": "^1.1.3"
   }
 }

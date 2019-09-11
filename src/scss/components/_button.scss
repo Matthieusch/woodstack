@@ -5,24 +5,26 @@
   font-family: $secondary-font;
   font-size: rem(18px);
   font-weight: bold;
-  line-height: (50 / 18);
-  padding: rem(0 20px);
+  line-height: 1.27;
+  padding: rem(14px 20px);
   text-align: center;
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.2, 3, 0.4, 1);
   user-select: none;
 
   @include media-breakpoint-up(sm) {
     min-width: rem(260px);
-    padding: rem(0 30px);
+    padding: rem(14px 30px);
   }
 
   &:hover {
-    transform: scale(1.1, 1.1);
+    
   }
 
   &:active {
-    transform: scale(1.05, 1.05);
+    
+  }
+
+  &--ib {
+    display: inline-block;
   }
 
   &--menu {

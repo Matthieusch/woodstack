@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Livraison Colis Rennes | Rapidité Sécurité Écologie | Roaz Delivery</title>
-        <meta description="Acheminez vos colis sur Rennes et dans toute la France – Livraison standard, rapide et urgente – Enlèvement à la demande – Roaz Delivery gère vos livraisons.">
+        <title>Chauffeurs Livreurs | Nous rejoindre – Carrières | Roaz Delivery</title>
+        <meta description="Rejoindre la famille Roaz delivery c’est associer expertise et qualité de vie au travail dans la livraison de colis sur Rennes et en France. Rejoignez-nous !">
 
         <link rel="stylesheet" href="css/styles.min.css">
 
@@ -20,9 +20,9 @@
         <meta name="theme-color" content="#ffffff">
     </head>
     <body>
-        <header class="header p-t-30">
+        <header class="header header--career p-t-30">
             <div class="container">
-                <div class="header__anim header__anim--slow anim fadeInRightBig" data-wow-duration="3s" data-wow-delay="1s" aria-hidden="true">
+                <div class="header__anim header__anim--slow" aria-hidden="true">
                     <div class="c-line"></div>
                     <div class="c-line"></div>
                     <div class="c-line"></div>
@@ -30,37 +30,40 @@
                     <div class="c-line"></div>
                     <div class="c-line"></div>
                 </div>
-                <div class="header__anim header__anim--fast anim fadeInRightBig" data-wow-duration="4s" aria-hidden="true">
+                <div class="header__anim header__anim--fast">
                     <div class="c-line c-line--contrast c-line--small"></div>
                     <div class="c-line c-line--contrast c-line--medium"></div>
                     <div class="c-line c-line--contrast"></div>
                 </div>
+
                 <nav class="menu" role="navigation" aria-label="Menu principal">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="/" class="c-button c-button--menu c-button--active" aria-current="page">L'offre</a></li>
-                        <li class="menu__item"><a href="/carrieres" class="c-button c-button--menu">Carrières</a></li>
+                        <li class="menu__item"><a href="/" class="c-button c-button--menu" aria-current="page">L'offre</a></li>
+                        <li class="menu__item"><a href="/carrieres" class="c-button c-button--menu c-button--active">Carrières</a></li>
                     </ul>
                 </nav>
 
-                <h1 class="header__title c-square c-square--white c-square--1 anim fadeInLeftBig" data-wow-duration="3s" data-wow-delay="1s">
+                <h1 class="header__title c-square c-square--white c-square--1 m-b-50">
                     <svg class="header__logo m-b-30" aria-label="Roaz Delivery">
                         <title>Roaz Delivery</title>
                         <use data-href="images/sprite.defs.svg#logo"></use>
                     </svg>
-                    <strong>Votre livraison de colis</strong>
-                    <strong>sur Rennes et en France</strong>
-                    <em class="c-title c-title--crimson c-title--center m-t-10 m-b-30">Rapide, fiable et écologique.</em>
+                    <strong>Rejoignez-la famille</strong>
+                    <b>Roaz delivery</b>
                 </h1>
 
-                <p class="c-text c-text--big c-text--center m-b-100 anim fadeInDown" data-wow-delay="4s">
-                    Parce que chaque livraison est unique, Roaz delivery s’adapte à vos besoins en toutes circonstances.
-                </p>
-
-                <svg class="header__illustration m-b-10" aria-label="Illustration d'une ville et du travail de Roaz Delivery au sein de celle-ci">
-                    <title>Roaz Delivery</title>
-                    <use data-href="images/sprite.defs.svg#header--home"></use>
-                </svg>
-
-                <a href="mailto:" class="c-button c-button--header">Contactez-nous</a>
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0 col-lg-6 m-b-30">
+                        <svg class="header__illustration" aria-label="Équipe de Roaz Delivery illustrée">
+                            <use data-href="images/sprite.defs.svg#header--career"></use>
+                        </svg>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <p class="c-text c-text--large m-b-50">
+                            Parmi les leaders de la livraison express à Rennes, nous recrutons en permanence de nombreux profils. 
+                        </p>
+                        <a href="mailto:" class="c-button c-button--header">Rejoignez-nous</a>
+                    </div>
+                </div>
             </div>
         </header>

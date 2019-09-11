@@ -1,5 +1,4 @@
 .c-title {
-  color: $crimson;
   display: block;
   font-size: rem(28px);
   font-style: normal;
@@ -7,6 +6,10 @@
   
   &--crimson {
     color: $crimson;
+  }
+
+  &--red {
+    color: $red;
   }
 
   &--center {
