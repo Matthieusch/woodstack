@@ -6,21 +6,40 @@
   font-size: rem(18px);
   font-weight: bold;
   line-height: 1.27;
+  overflow: hidden;
   padding: rem(14px 20px);
+  position: relative;
   text-align: center;
+  transition: .3s ease-in-out;
   user-select: none;
+  z-index: 0;
 
   @include media-breakpoint-up(sm) {
     min-width: rem(260px);
     padding: rem(14px 30px);
   }
 
-  &:hover {
-    
+  
+  @include before() {
+    background: $baltic-sea;
+    position: absolute;
+    width: 200%;
+    height: 500%;
+    border-radius: 100%;
+    transition: .36s cubic-bezier(0.4, 0.0, 1, 1);
+    z-index: -1;
   }
 
-  &:active {
-    
+  &:before {
+    transform: translate(-120%,-50%) translateZ(0)
+  }
+
+  &:hover {
+    color: #fff;
+
+    &::before {
+      transform: translate(-45%,-34%) translateZ(0)
+    }
   }
 
   &--ib {
@@ -31,6 +50,14 @@
     background: $baltic-sea;
     color: #fff;
     min-width: rem(142px);
+
+    &::before {
+      background: #fff;
+    }
+  
+    &:hover {
+      color: $baltic-sea;
+    }
 
     @include media-breakpoint-up(sm) {
       min-width: rem(180px);

@@ -2,6 +2,7 @@
     background: $gallery;
     padding-bottom: rem(100px);
     padding-top: rem(60px);
+    position: relative;
 
     &--baltic {
         background: $baltic-sea;
@@ -72,7 +73,7 @@
     }
 
     @include media-breakpoint-up(lg) {
-        transform: translateY(rem(90px));
+        top: rem(90px);
 
         &:first-child {
             &::after {
@@ -81,7 +82,7 @@
         }
 
         &:nth-child(2) {
-            transform: translateY(rem(45px));
+            top: rem(45px);
 
             &::before,
             &::after {
@@ -90,8 +91,8 @@
         }
 
         &:nth-child(3) {
+            top: 0;
             position: relative;
-            transform: none;
         
             @include before() {
                 background: $red;

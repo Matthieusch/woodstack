@@ -518,6 +518,28 @@ strong {
   }
 }
 
+.quality {
+  overflow: hidden;
+
+  & > * {
+    position: relative;
+  }
+
+  &__illustration {
+    display: block;
+    margin: 0 auto;
+    width: rem(210px);
+  }
+
+  &__list {
+    margin-left: rem(10px);
+    
+    @include media-breakpoint-up(sm) {
+      margin-left: rem(30px);
+    }
+  }
+}
+
 .footer {
   background-color: $red;
 

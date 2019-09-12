@@ -33,4 +33,10 @@
             @include position(rem(-115px), auto, auto, rem(255px));
         }
     }
+
+    &--4 {
+        &::before {
+            @include position(rem(-160px), auto, auto, rem(-40px));
+        }
+    }
 }

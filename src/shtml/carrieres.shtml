@@ -4,9 +4,9 @@
         <section class="introduction p-t-135 p-t-60 p-b-110">
             <div class="container">
                 <div class="introduction__anim introduction__anim--left" aria-hidden="true">
-                    <div class="c-line c-line--small"></div>
-                    <div class="c-line"></div>
-                    <div class="c-line c-line--medium"></div>
+                    <div class="c-line c-line--small anim bounceInLeft"></div>
+                    <div class="c-line anim bounceInLeft"></div>
+                    <div class="c-line c-line--medium anim bounceInLeft"></div>
                 </div>
                 <h2 class="c-title c-title--crimson m-b-30">
                     Des équipes expertes et passionnées
@@ -38,9 +38,9 @@
                     </li>
                 </ul>
                 <div class="introduction__anim introduction__anim--right" aria-hidden="true">
-                    <div class="c-line"></div>
-                    <div class="c-line c-line--big"></div>
-                    <div class="c-line c-line--small"></div>
+                    <div class="c-line anim bounceInRight"></div>
+                    <div class="c-line c-line--big anim bounceInRight"></div>
+                    <div class="c-line c-line--small anim bounceInRight"></div>
                 </div>
             </div>
         </section>
@@ -48,9 +48,9 @@
         <section class="expertise p-t-110 p-b-110">
             <div class="container">
                 <div class="expertise__anim expertise__anim--left" aria-hidden="true">
-                    <div class="c-line c-line--contrast c-line--small"></div>
-                    <div class="c-line c-line--contrast c-line--medium"></div>
-                    <div class="c-line c-line--contrast"></div>
+                    <div class="c-line c-line--contrast c-line--small anim bounceInLeft"></div>
+                    <div class="c-line c-line--contrast c-line--medium anim bounceInLeft"></div>
+                    <div class="c-line c-line--contrast anim bounceInLeft"></div>
                 </div>
                 <h2 class="expertise__title c-title c-title--red c-title--center m-b-40">
                     Votre expertise : notre ambition
@@ -73,9 +73,50 @@
                     Ce sont autant de leviers pour vous permettre de vous <strong>réaliser professionnellement</strong> et ainsi mettre votre expertise au service de nos clients.
                 </p>
                 <div class="expertise__anim expertise__anim--right" aria-hidden="true">
-                    <div class="c-line c-line--contrast c-line--small"></div>
-                    <div class="c-line c-line--contrast c-line--big"></div>
-                    <div class="c-line c-line--contrast"></div>
+                    <div class="c-line c-line--contrast c-line--small anim bounceInRight"></div>
+                    <div class="c-line c-line--contrast c-line--big anim bounceInRight"></div>
+                    <div class="c-line c-line--contrast anim bounceInRight"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quality p-t-110 p-b-80">
+            <div class="container">
+                <h2 class="expertise__title c-title m-b-30">
+                    Rendre compatible qualité de vie et bien-être au travail
+                </h2>
+                <p class="expertise__text c-text c-text--large m-b-60">
+                    Nous avons à c&oelig;ur d’analyser avec vous l’ensemble de nos pratiques pour positionner l’ensemble de nos collaborateurs au centre de l’entreprise.<br>Notre engagement RSE <em>(Responsabilité Sociale et Environnementale)</em> s’inscrit entièrement dans cette démarche.
+                </p>
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-4 m-b-30">
+                        <svg class="quality__illustration" aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#values--humans"></use>
+                        </svg>
+                    </div>
+                    <div class="col-12 col-md-8 m-b-30">
+                        <h3 class="c-title c-title--red c-title--small c-square c-square--4 m-b-20">Nos préoccupations et les leviers sont variés :</h3>
+                        <ul class="quality__list">
+                            <li class="c-text c-text--medium c-list-item m-b-10">
+                                <span>Disposer d’un environnement de travail sécurisé</span>
+                            </li>
+                            <li class="c-text c-text--medium c-list-item m-b-10">
+                                <span>Former les collaborateurs aux postures de travail</span>
+                            </li>
+                            <li class="c-text c-text--medium c-list-item m-b-10">
+                                <span>Engager l’entreprise et former les salariés pour la prévention du risque routier</span>
+                            </li>
+                            <li class="c-text c-text--medium c-list-item m-b-10">
+                                <span>Optimiser et dynamiser les échanges programmés pour éviter la réunionite</span>
+                            </li>
+                            <li class="c-text c-text--medium c-list-item m-b-10">
+                                <span>Oser parler de parentalité</span>
+                            </li>
+                            <li class="c-text c-text--medium c-list-item">
+                                <span>Proscrire une politique de performance basée uniquement sur la cadence de nos livreurs</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

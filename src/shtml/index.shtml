@@ -4,9 +4,9 @@
         <section class="disclaimer p-t-135 p-b-90">
             <div class="container">
                 <div class="disclaimer__anim disclaimer__anim--left" aria-hidden="true">
-                    <div class="c-line c-line--small"></div>
-                    <div class="c-line c-line--medium"></div>
-                    <div class="c-line"></div>
+                    <div class="c-line c-line--small anim bounceInLeft"></div>
+                    <div class="c-line c-line--medium anim bounceInLeft"></div>
+                    <div class="c-line anim bounceInLeft"></div>
                 </div>
                 <h2 class="c-title c-title--crimson m-b-30">
                     Une livraison à la hauteur de vos exigences
@@ -19,31 +19,31 @@
                     </div>
                 </div>
                 <ul class="disclaimer__list">
-                    <li class="disclaimer__item">
+                    <li class="disclaimer__item anim fadeInUp">
                         <svg class="m-b-15" aria-hidden="true">
                             <use data-href="images/sprite.defs.svg#marchandise--package"></use>
                         </svg>
                         <p class="c-text c-text--medium"><strong>Colis standard</strong></p>
                     </li>
-                    <li class="disclaimer__item">
+                    <li class="disclaimer__item anim fadeInUp" data-wow-delay="0.25s">
                         <svg class="m-b-15" aria-hidden="true">
                             <use data-href="images/sprite.defs.svg#marchandise--sensible"></use>
                         </svg>
                         <p class="c-text c-text--medium"><strong>Produits sensibles</strong></p>
                     </li>
-                    <li class="disclaimer__item">
+                    <li class="disclaimer__item anim fadeInUp" data-wow-delay="0.5s">
                         <svg class="m-b-15" aria-hidden="true">
                             <use data-href="images/sprite.defs.svg#marchandise--apple"></use>
                         </svg>
                         <p class="c-text c-text--medium"><strong>Denrées alimentaires</strong></p>
                     </li>
-                    <li class="disclaimer__item">
+                    <li class="disclaimer__item anim fadeInUp" data-wow-delay="0.75s">
                         <svg class="m-b-15" aria-hidden="true">
                             <use data-href="images/sprite.defs.svg#marchandise--pallet"></use>
                         </svg>
                         <p class="c-text c-text--medium"><strong>Marchandises<br>sur palettes</strong></p>
                     </li>
-                    <li class="disclaimer__item">
+                    <li class="disclaimer__item anim fadeInUp" data-wow-delay="1s">
                         <svg class="m-b-15" aria-hidden="true">
                             <use data-href="images/sprite.defs.svg#marchandise--heavy"></use>
                         </svg>
@@ -51,9 +51,9 @@
                     </li>
                 </ul>
                 <div class="disclaimer__anim disclaimer__anim--right" aria-hidden="true">
-                    <div class="c-line c-line--small"></div>
-                    <div class="c-line c-line--big"></div>
-                    <div class="c-line"></div>
+                    <div class="c-line c-line--small anim bounceInRight"></div>
+                    <div class="c-line c-line--big anim bounceInRight"></div>
+                    <div class="c-line anim bounceInRight"></div>
                 </div>
             </div>
         </section>
@@ -61,7 +61,7 @@
         <section class="offers">
             <div class="container">
                 <div class="row">
-                    <div class="card col-12 col-md-6 col-lg-4">
+                    <div class="card col-12 col-md-6 col-lg-4 anim fadeInLeft">
                         <h2 class="card__title card__title--1 m-b-15">
                             <svg aria-label="Regular">
                                 <use data-href="images/sprite.defs.svg#r--black"></use>
@@ -90,7 +90,7 @@
                         </ul>
                         <a href="mailto:" class="c-button c-button--header">Contactez-nous</a>
                     </div>
-                    <div class="card card--baltic card--contrast col-md-6 col-12 col-lg-4">
+                    <div class="card card--baltic card--contrast col-md-6 col-12 col-lg-4 anim fadeInLeft" data-wow-delay="0.5s">
                         <h2 class="card__title card__title--2 m-b-15">
                             <svg aria-label="Regular">
                                 <use data-href="images/sprite.defs.svg#r--red"></use>
@@ -113,7 +113,7 @@
                         </ul>
                         <a href="mailto:" class="c-button c-button--header">Contactez-nous</a>
                     </div>
-                    <div class="card card--red col-12 col-lg-4">
+                    <div class="card card--red col-12 col-lg-4 anim fadeInLeft" data-wow-delay="1s">
                         <h2 class="card__title card__title--3 m-b-15">
                             <svg aria-label="Regular">
                                 <use data-href="images/sprite.defs.svg#r--black"></use>
@@ -143,7 +143,7 @@
         <section class="values">
             <div class="container">
                 <div class="row no-gutters">
-                    <div class="values__col col-12 col-lg-6 p-b-110">
+                    <div class="values__col col-12 col-lg-6 p-b-110 anim fadeInLeft">
                         <svg aria-hidden="true">
                             <use data-href="images/sprite.defs.svg#values--humans"></use>
                         </svg>
@@ -188,7 +188,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="values__col col-12 col-lg-6 p-b-110">
+                    <div class="values__col col-12 col-lg-6 p-b-110 anim fadeInRight">
                         <svg aria-hidden="true">
                             <use data-href="images/sprite.defs.svg#values--eco"></use>
                         </svg>
@@ -204,7 +204,7 @@
                         <div class="row no-gutters">
                             <div class="col-12 col-sm-6">
                                 <ul class="c-post-its">
-                                    <li class="c-post-its__item c-post-its__item--bordered c-post-its__item--bordered-green">
+                                    <li class="c-post-its__item">
                                         <span><strong>Optimisation</strong><br> des tournées et de nos services<br>pour réduire le trafic routier</span>
                                     </li>
                                     <li class="c-post-its__item c-post-its__item--contrast c-post-its__item--contrast-green">
@@ -226,7 +226,7 @@
                                     <li class="c-post-its__item c-post-its__item--contrast">
                                         <span><strong>Digitalisation</strong><br>des process</span>
                                     </li>
-                                    <li class="c-post-its__item c-post-its__item--bordered c-post-its__item--bordered-green">
+                                    <li class="c-post-its__item">
                                         <span>Réflexion constante<br>pour améliorer nos<br><strong>services</strong><br>dans un objectif<br>environnemental</span>
                                     </li>
                                 </ul>
@@ -240,9 +240,9 @@
         <section class="recruitement p-t-110 p-b-55">
             <div class="container">
                 <div class="recruitement__anim recruitement__anim--left" aria-hidden="true">
-                    <div class="c-line c-line--contrast c-line--small"></div>
-                    <div class="c-line c-line--contrast c-line--medium"></div>
-                    <div class="c-line c-line--contrast"></div>
+                    <div class="c-line c-line--contrast c-line--small anim bounceInLeft"></div>
+                    <div class="c-line c-line--contrast c-line--medium anim bounceInLeft"></div>
+                    <div class="c-line c-line--contrast anim bounceInLeft"></div>
                 </div>
                 <div class="row">
                     <div class="recruitement__col col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-0">
@@ -261,9 +261,9 @@
                     </div>
                 </div>
                 <div class="recruitement__anim recruitement__anim--right" aria-hidden="true">
-                    <div class="c-line c-line--contrast c-line--small"></div>
-                    <div class="c-line c-line--contrast"></div>
-                    <div class="c-line c-line--contrast c-line--big"></div>
+                    <div class="c-line c-line--contrast c-line--small anim bounceInRight"></div>
+                    <div class="c-line c-line--contrast anim bounceInRight"></div>
+                    <div class="c-line c-line--contrast c-line--big anim bounceInRight"></div>
                 </div>
             </div>
         </section>

@@ -22,7 +22,7 @@
     <body>
         <header class="header p-t-30">
             <div class="container">
-                <div class="header__anim header__anim--slow anim fadeInRightBig" data-wow-duration="3s" data-wow-delay="1s" aria-hidden="true">
+                <div class="header__anim header__anim--slow anim fadeInRightBig" data-wow-duration="3s" aria-hidden="true">
                     <div class="c-line"></div>
                     <div class="c-line"></div>
                     <div class="c-line"></div>
@@ -30,7 +30,7 @@
                     <div class="c-line"></div>
                     <div class="c-line"></div>
                 </div>
-                <div class="header__anim header__anim--fast anim fadeInRightBig" data-wow-duration="4s" aria-hidden="true">
+                <div class="header__anim header__anim--fast anim fadeInRightBig" data-wow-duration="2s" data-wow-delay="1s" aria-hidden="true">
                     <div class="c-line c-line--contrast c-line--small"></div>
                     <div class="c-line c-line--contrast c-line--medium"></div>
                     <div class="c-line c-line--contrast"></div>
@@ -42,7 +42,7 @@
                     </ul>
                 </nav>
 
-                <h1 class="header__title c-square c-square--white c-square--1 anim fadeInLeftBig" data-wow-duration="3s" data-wow-delay="1s">
+                <h1 class="header__title c-square c-square--white c-square--1 anim fadeInLeftBig" data-wow-duration="2s">
                     <svg class="header__logo m-b-30" aria-label="Roaz Delivery">
                         <title>Roaz Delivery</title>
                         <use data-href="images/sprite.defs.svg#logo"></use>
@@ -52,7 +52,7 @@
                     <em class="c-title c-title--crimson c-title--center m-t-10 m-b-30">Rapide, fiable et écologique.</em>
                 </h1>
 
-                <p class="c-text c-text--big c-text--center m-b-100 anim fadeInDown" data-wow-delay="4s">
+                <p class="c-text c-text--big c-text--center m-b-100 anim fadeInUp" data-wow-delay="3s">
                     Parce que chaque livraison est unique, Roaz delivery s’adapte à vos besoins en toutes circonstances.
                 </p>
 

@@ -18,6 +18,7 @@
     &__item {
         @include fx();
         background: $gallery;
+        border-bottom: rem(2px) solid $pastel-green;
         font-size: rem(14px);
         padding: rem(50px) rem(25px);
         text-align: center;
@@ -28,25 +29,21 @@
         
         &--bordered {
             background: transparent;
-            box-shadow: 0 0 0 1px $baltic-sea, inset 0 0 0 1px $baltic-sea;
+            border-color: $baltic-sea;
             position: relative;
             z-index: 5;
-            
-            &-green {
-                box-shadow: 0 0 0 1px $pastel-green, inset 0 0 0 1px $pastel-green;
-            }
         }
         
         &--contrast {
             background: $baltic-sea;
-            box-shadow: 0 0 0 1px $baltic-sea, inset 0 0 0 1px $baltic-sea;
+            border-color: $pastel-green;
             color: #fff;
             position: relative;
             z-index: 5;
             
             &-green {
                 background: $pastel-green;
-                box-shadow: 0 0 0 1px $pastel-green, inset 0 0 0 1px $pastel-green;
+                border-color: $baltic-sea;
                 color: $baltic-sea;
             }
         }
