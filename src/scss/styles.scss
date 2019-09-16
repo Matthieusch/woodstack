@@ -224,7 +224,7 @@ strong {
     }
 
     &::before {
-      height: rem(140px);
+      height: rem(120px);
     }
 
     &::after {
@@ -237,6 +237,18 @@ strong {
           margin-left: rem(380px);
         }
       }
+    }
+  }
+
+  &--mentions {
+    padding-bottom: rem(130px);
+
+    &::before {
+      height: rem(90px);
+    }
+
+    &::after {
+      height: rem(45px);
     }
   }
 
@@ -537,6 +549,12 @@ strong {
     @include media-breakpoint-up(sm) {
       margin-left: rem(30px);
     }
+  }
+}
+
+.content {
+  a {
+    color: $crimson;
   }
 }
 

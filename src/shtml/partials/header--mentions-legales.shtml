@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Chauffeurs Livreurs | Nous rejoindre – Carrières | Roaz Delivery</title>
+        <title>Mentions légales | Roaz Delivery</title>
         <meta description="Rejoindre la famille Roaz delivery c’est associer expertise et qualité de vie au travail dans la livraison de colis sur Rennes et en France. Rejoignez-nous !">
 
         <link rel="stylesheet" href="css/styles.min.css">
@@ -19,20 +19,18 @@
         <meta name="msapplication-config" content="favicon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
 
-        <meta property="og:url" content="https://roazd.fr/carrieres" />
+        <meta property="og:url" content="https://roazd.fr/mentions-legales" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr_FR" />
-        <meta property="og:title" content="Chauffeurs Livreurs | Nous rejoindre – Carrières | Roaz Delivery" />
-        <meta property="og:description" content="Rejoindre la famille Roaz delivery c’est associer expertise et qualité de vie au travail dans la livraison de colis sur Rennes et en France. Rejoignez-nous !" />
+        <meta property="og:title" content="Mentions légales | Roaz Delivery" />
         <meta property="og:image" content="https://roaz.fr/images/roaz-delivery.jpg" />
 
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Chauffeurs Livreurs | Nous rejoindre – Carrières | Roaz Delivery">
-        <meta name="twitter:description" content="Rejoindre la famille Roaz delivery c’est associer expertise et qualité de vie au travail dans la livraison de colis sur Rennes et en France. Rejoignez-nous !">
+        <meta name="twitter:title" content="Mentions légales | Roaz Delivery">
         <meta name="twitter:image" content="https://roaz.fr/images/roaz-delivery.jpg">
     </head>
     <body>
-        <header class="header header--career p-t-30">
+        <header class="header header--mentions p-t-30">
             <div class="container">
                 <div class="header__anim header__anim--slow" aria-hidden="true">
                     <div class="c-line"></div>
@@ -51,7 +49,7 @@
                 <nav class="menu" role="navigation" aria-label="Menu principal">
                     <ul class="menu__list">
                         <li class="menu__item"><a href="/" class="c-button c-button--menu" aria-current="page">L'offre</a></li>
-                        <li class="menu__item"><a href="/carrieres" class="c-button c-button--menu c-button--active">Carrières</a></li>
+                        <li class="menu__item"><a href="/carrieres" class="c-button c-button--menu">Carrières</a></li>
                     </ul>
                 </nav>
 
@@ -60,22 +58,7 @@
                         <title>Roaz Delivery</title>
                         <use data-href="images/sprite.defs.svg#logo"></use>
                     </svg>
-                    <strong>Rejoignez-la famille</strong>
-                    <b>Roaz delivery</b>
+                    <strong>Mentions Légales</strong>
                 </h1>
-
-                <div class="row align-items-center">
-                    <div class="col-12 col-sm-10 offset-sm-1 col-md-12 offset-md-0 col-lg-6 m-b-30">
-                        <svg class="header__illustration" aria-label="Équipe de Roaz Delivery illustrée">
-                            <use data-href="images/sprite.defs.svg#header--career"></use>
-                        </svg>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <p class="c-text c-text--large m-b-50">
-                            Parmi les leaders de la livraison express à Rennes, nous recrutons en permanence de nombreux profils. 
-                        </p>
-                        <a href="mailto:recrutement@roaz.fr?subject=[Candidature site ROAZ]" class="c-button c-button--header">Rejoignez-nous</a>
-                    </div>
-                </div>
             </div>
         </header>

@@ -1,3 +1,8 @@
+AuthType Basic
+AuthName "Site en développement"
+AuthUserFile /var/www/roazd/0001/.htpassword
+Require valid-user
+
 Options +FollowSymlinks
 RewriteEngine On
 RewriteRule ^index\.html$ / [R=301,L]

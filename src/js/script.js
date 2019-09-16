@@ -1,16 +1,16 @@
 import _ from 'lodash';
 import svg4everybody from 'svg4everybody';
-import {WOW} from 'wowjs';
+import { WOW } from 'wowjs';
 
 /* Loads SVG polyfill to inline SVG sprite for IE9 to IE Edge 12 */
-(function() {
-    var wow = new WOW({
-        boxClass:     'anim',      // animated element css class (default is wow)
+document.addEventListener("DOMContentLoaded", function(event) { 
+    const wow = new WOW({
+        boxClass: 'anim',      // animated element css class (default is wow)
         animateClass: 'animated', // animation css class (default is animated)
-        offset:       100,          // distance to the element when triggering the animation (default is 0)
-        mobile:       false,       // trigger animations on mobile devices (default is true)
-        live:         false,       // act on asynchronously loaded content (default is true)
-        callback:     function(box) {
+        offset: 100,          // distance to the element when triggering the animation (default is 0)
+        mobile: false,       // trigger animations on mobile devices (default is true)
+        live: false,       // act on asynchronously loaded content (default is true)
+        callback: function (box) {
             // the callback is fired every time an animation is started
             // the argument that is passed in is the DOM node being animated
         },
@@ -22,7 +22,7 @@ import {WOW} from 'wowjs';
         attributeName: 'data-href',
         polyfill: true
     });
-})();
+});
 
 /* Component sample */
 // function component() {

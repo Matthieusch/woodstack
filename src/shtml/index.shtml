@@ -88,9 +88,9 @@
                                 <span>La preuve de livraison adressée immédiatement sur votre boîte mail pour des livraisons conformes</span>
                             </li>
                         </ul>
-                        <a href="mailto:" class="c-button c-button--header">Contactez-nous</a>
+                        <a href="mailto:contact@roaz.fr?subject=[Contact site Roaz]" class="c-button c-button--header">Contactez-nous</a>
                     </div>
-                    <div class="card card--baltic card--contrast col-md-6 col-12 col-lg-4 anim fadeInLeft" data-wow-delay="0.5s">
+                    <div class="card card--baltic card--contrast col-md-6 col-12 col-lg-4 anim fadeInLeft" data-wow-delay="0.5s" data-wow-offset="145">
                         <h2 class="card__title card__title--2 m-b-15">
                             <svg aria-label="Regular">
                                 <use data-href="images/sprite.defs.svg#r--red"></use>
@@ -111,9 +111,9 @@
                                 <span>Une information du destinataire en cas d’absence et prise en compte des nouvelles dispositions de livraison</span>
                             </li>
                         </ul>
-                        <a href="mailto:" class="c-button c-button--header">Contactez-nous</a>
+                        <a href="mailto:mailto:contact@roaz.fr?subject=[Contact site Roaz]" class="c-button c-button--header">Contactez-nous</a>
                     </div>
-                    <div class="card card--red col-12 col-lg-4 anim fadeInLeft" data-wow-delay="1s">
+                    <div class="card card--red col-12 col-lg-4 anim fadeInLeft" data-wow-delay="1s" data-wow-offset="190">
                         <h2 class="card__title card__title--3 m-b-15">
                             <svg aria-label="Regular">
                                 <use data-href="images/sprite.defs.svg#r--black"></use>
@@ -134,7 +134,7 @@
                                 <span>L’assurance d’une gestion fiable et sécurisée de vos livraisons complexes et de vos opérations spéciales (lancement de produit, nouveaux clients…)</span>
                             </li>
                         </ul>
-                        <a href="mailto:" class="c-button c-button--header">Contactez-nous</a>
+                        <a href="mailto:contact@roaz.fr?subject=[Contact site Roaz]" class="c-button c-button--header">Contactez-nous</a>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@
                                         <span><strong>Assurance</strong><br>Ad Valorem pour garantir<br>le bien transporté</span>
                                     </li>
                                     <li class="c-post-its__item">
-                                        <span>Des<br><strong>livreurs formés et équipés</strong><br>pour le confort et la<br>sécurité de tous</span>
+                                        <span>Des livreurs<br><strong>formés et équipés</strong><br>pour le confort et la<br>sécurité de tous</span>
                                     </li>
                                 </ul>
                             </div>
@@ -257,7 +257,7 @@
                         <p class="recruitement__text c-text c-text--large c-text--left m-b-50">
                             Fournir du matériel de qualité, un rythme de travail acceptable et un cadre motivant sont les clés que nous avons choisies pour vous offrir un service de qualité. 
                         </p>
-                        <a href="mailto:" class="c-button c-button--ib c-underline c-underline--medium c-underline--contrast c-underline--after"><b>Découvrez pourquoi nous rejoindre</b></a>
+                        <a href="/carrieres" class="c-button c-button--ib c-underline c-underline--medium c-underline--contrast c-underline--after"><b>Découvrez pourquoi nous rejoindre</b></a>
                     </div>
                 </div>
                 <div class="recruitement__anim recruitement__anim--right" aria-hidden="true">

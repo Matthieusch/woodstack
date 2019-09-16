@@ -1,7 +1,12 @@
 .c-line {
     background: $baltic-sea;
+    display: none;
     height: rem(2px);
     width: rem(96px);
+
+    @include media-breakpoint-up(xl) {
+        display: block;
+    }
 
     &--contrast {
         background: #fff;
