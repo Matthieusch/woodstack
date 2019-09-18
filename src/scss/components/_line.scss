@@ -1,0 +1,26 @@
+.c-line {
+    background: $baltic-sea;
+    display: none;
+    height: rem(2px);
+    width: rem(96px);
+
+    @include media-breakpoint-up(xl) {
+        display: block;
+    }
+
+    &--contrast {
+        background: #fff;
+    }
+
+    &--small {
+        width: rem(30px);
+    }
+
+    &--medium {
+        width: rem(300px);
+    }
+
+    &--big {
+        width: rem(505px);
+    }
+}

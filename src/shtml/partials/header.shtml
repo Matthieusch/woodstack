@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Livraison Colis Rennes | Rapidité Sécurité Écologie | Roaz Delivery</title>
+        <meta name="description" content="Acheminez vos colis sur Rennes et dans toute la France – Livraison standard, rapide et urgente – Enlèvement à la demande – Roaz Delivery gère vos livraisons.">
+
+        <link rel="stylesheet" href="css/styles.min.css">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#da0f19">
+        <link rel="shortcut icon" href="favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+        <meta property="og:url" content="https://roazd.fr" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:title" content="Livraison Colis Rennes | Rapidité Sécurité Écologie | Roaz Delivery" />
+        <meta property="og:description" content="Acheminez vos colis sur Rennes et dans toute la France – Livraison standard, rapide et urgente – Enlèvement à la demande – Roaz Delivery gère vos livraisons." />
+        <meta property="og:image" content="https://roaz.fr/images/roaz-delivery.jpg" />
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Livraison Colis Rennes | Rapidité Sécurité Écologie | Roaz Delivery">
+        <meta name="twitter:description" content="Acheminez vos colis sur Rennes et dans toute la France – Livraison standard, rapide et urgente – Enlèvement à la demande – Roaz Delivery gère vos livraisons.">
+        <meta name="twitter:image" content="https://roaz.fr/images/roaz-delivery.jpg">
+    </head>
+    <body>
+        <header class="header p-t-30">
+            <div class="container">
+                <div class="header__anim header__anim--slow anim fadeInRightBig" data-wow-duration="3s" aria-hidden="true">
+                    <div class="c-line"></div>
+                    <div class="c-line"></div>
+                    <div class="c-line"></div>
+                    <div class="c-line"></div>
+                    <div class="c-line"></div>
+                    <div class="c-line"></div>
+                </div>
+                <div class="header__anim header__anim--fast anim fadeInRightBig" data-wow-duration="2s" data-wow-delay="1s" aria-hidden="true">
+                    <div class="c-line c-line--contrast c-line--small"></div>
+                    <div class="c-line c-line--contrast c-line--medium"></div>
+                    <div class="c-line c-line--contrast"></div>
+                </div>
+                <nav class="menu" role="navigation" aria-label="Menu principal">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="/" class="c-button c-button--menu c-button--active" aria-current="page">L'offre</a></li>
+                        <li class="menu__item"><a href="/carrieres" class="c-button c-button--menu">Carrières</a></li>
+                    </ul>
+                </nav>
+
+                <h1 class="header__title c-square c-square--white c-square--1 anim fadeInLeftBig" data-wow-duration="2s">
+                    <svg class="header__logo m-b-30" aria-label="Roaz Delivery">
+                        <title>Roaz Delivery</title>
+                        <use data-href="images/sprite.defs.svg#logo"></use>
+                    </svg>
+                    <strong>Votre livraison de colis</strong>
+                    <strong>sur Rennes et en France</strong>
+                    <em class="c-title c-title--crimson c-title--center m-t-10 m-b-30">Rapide, fiable et écologique.</em>
+                </h1>
+
+                <p class="c-text c-text--big c-text--center m-b-100 anim fadeInUp" data-wow-delay="3s">
+                    Parce que chaque livraison est unique, Roaz delivery s’adapte à vos besoins en toutes circonstances.
+                </p>
+
+                <svg class="header__illustration m-b-10" aria-label="Illustration d'une ville et du travail de Roaz Delivery au sein de celle-ci">
+                    <title>Roaz Delivery</title>
+                    <use data-href="images/sprite.defs.svg#header--home"></use>
+                </svg>
+
+                <a href="mailto:contact@roaz.fr?subject=[Contact site Roaz]" class="c-button c-button--header">Contactez-nous</a>
+            </div>
+        </header>

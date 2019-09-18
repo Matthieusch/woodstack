@@ -1,0 +1,49 @@
+# AuthType Basic
+# AuthName "Site en développement"
+# AuthUserFile /var/www/roazd/0001/.htpassword
+# Require valid-user
+
+AddDefaultCharset UTF-8
+DefaultLanguage fr-fr
+
+# MIME Mappings
+AddType font/woff .woff
+AddType font/woff2 .woff2
+
+<IfModule mod_headers.c>
+    Header set Content-Security-Policy "default-src 'self'; base-uri 'self';"
+    Header set Set-Cookie HttpOnly;Secure
+    Header set Cache-Control "max-age=86400, public"
+
+    Header add Access-Control-Allow-Origin: "*"
+    Header add Access-Control-Allow-Methods: "GET,POST,OPTIONS,DELETE,PUT"
+    Header add Access-Control-Allow-Headers: "Content-Type"
+
+    Header always append X-Frame-Options SAMEORIGIN
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Content-Type-Options nosniff
+
+    <FilesMatch "\.(htm|html|php)$">
+        Header set X-UA-Compatible "IE=Edge,chrome=1"
+    </FilesMatch>
+
+    <FilesMatch ".(js|css|xml|gz|html|svg)$">
+        Header append Vary: Accept-Encoding
+    </FilesMatch>
+</IfModule>
+
+ErrorDocument 404 /
+ErrorDocument 503 /
+
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,NE,QSA]
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]

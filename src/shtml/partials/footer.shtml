@@ -1,0 +1,47 @@
+        <footer class="footer p-t-110 p-b-30">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-4 m-b-30">
+                        <svg class="footer__logo" aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#logo--contrast"></use>
+                        </svg>
+                    </div>
+                    <div class="col-12 col-lg-8 justify-content-center m-b-30">
+                        <div class="contact">
+                            <a href="mailto:contact@roaz.fr?subject=[Contact site Roaz]" class="c-button">Contactez-nous</a>
+                            <div class="contact__separator m-l-30 m-r-15" aria-hidden="true"></div>
+                            <a href="https://www.facebook.com/Roaz-delivery-118360106219680/" class="contact__link" title="Suivez-nous sur Facebook" target="_blank">
+                                <svg aria-hidden="true">
+                                    <use data-href="images/sprite.defs.svg#icon--facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/Roaz_delivery" class="contact__link" title="Suivez-nous sur Twitter" target="_blank">
+                                <svg aria-hidden="true">
+                                    <use data-href="images/sprite.defs.svg#icon--twitter"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-b-80">
+                    <div class="col-12">
+                        <p class="footer__text">
+                            Roaz delivery ce sont des services de livraison sur-mesure pour vos marchandises sur Rennes et en France.<br>
+                            Quel que soit le degré d’urgence de votre acheminement, notre équipe vous garantit une qualité de service constante tout en s’engageant durablement pour la préservation de l’environnement.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-end">
+                    <nav class="col nav">
+                        <ul>
+                            <li>
+                                <a href="/mentions-legales" class="nav__link c-text c-list-item" title="Accéder à nos mentions légales"><b>Mentions légales</b></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.min.js"></script>
+    </body>
+</html>

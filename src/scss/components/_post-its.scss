@@ -1,0 +1,57 @@
+.c-post-its {
+    &--row {
+        @include fx(row wrap, center, stretch);
+
+        .c-post-its__item {
+            flex: 100%;
+            
+            @include media-breakpoint-up(md) {
+                flex: 50%;
+            }
+
+            @include media-breakpoint-up(lg) {
+                flex: percentage(1 / 3);
+            }
+        }
+    }
+
+    &__item {
+        @include fx();
+        background: $gallery;
+        border-bottom: rem(2px) solid $pastel-green;
+        font-size: rem(14px);
+        padding: rem(50px) rem(25px);
+        text-align: center;
+        
+        strong {
+            font-size: rem(20px);
+        }
+        
+        &--bordered {
+            background: transparent;
+            border-color: $baltic-sea;
+            position: relative;
+            z-index: 5;
+        }
+        
+        &--contrast {
+            background: $baltic-sea;
+            border-color: $pastel-green;
+            color: #fff;
+            position: relative;
+            z-index: 5;
+            
+            &-green {
+                background: $pastel-green;
+                border-color: $baltic-sea;
+                color: $baltic-sea;
+            }
+        }
+
+        &--small {
+            strong {
+                font-size: rem(16px);
+            }
+        }
+    }
+}

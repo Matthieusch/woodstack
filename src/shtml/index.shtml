@@ -1,0 +1,272 @@
+<!--#include file="partials/header.shtml" -->
+
+    <main>
+        <section class="disclaimer p-t-135 p-b-90">
+            <div class="container">
+                <div class="disclaimer__anim disclaimer__anim--left" aria-hidden="true">
+                    <div class="c-line c-line--small anim bounceInLeft"></div>
+                    <div class="c-line c-line--medium anim bounceInLeft"></div>
+                    <div class="c-line anim bounceInLeft"></div>
+                </div>
+                <h2 class="c-title c-title--crimson m-b-30">
+                    Une livraison à la hauteur de vos exigences
+                </h2>
+                <div class="row m-b-30">
+                    <div class="col-12 col-md-8 offset-md-2">
+                        <p class="c-text c-text--big c-square c-square--2">
+                            Nous vous proposons un process unifié et un engagement quotidien pour <strong>respecter délais et sécurité</strong> dans la livraison et acheminer tout type de marchandise dans des conditions optimales :
+                        </p>
+                    </div>
+                </div>
+                <ul class="disclaimer__list">
+                    <li class="disclaimer__item anim fadeInUp">
+                        <svg class="m-b-15" aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#marchandise--package"></use>
+                        </svg>
+                        <p class="c-text c-text--medium"><strong>Colis standard</strong></p>
+                    </li>
+                    <li class="disclaimer__item anim fadeInUp" data-wow-delay="0.25s">
+                        <svg class="m-b-15" aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#marchandise--sensible"></use>
+                        </svg>
+                        <p class="c-text c-text--medium"><strong>Produits sensibles</strong></p>
+                    </li>
+                    <li class="disclaimer__item anim fadeInUp" data-wow-delay="0.5s">
+                        <svg class="m-b-15" aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#marchandise--apple"></use>
+                        </svg>
+                        <p class="c-text c-text--medium"><strong>Denrées alimentaires</strong></p>
+                    </li>
+                    <li class="disclaimer__item anim fadeInUp" data-wow-delay="0.75s">
+                        <svg class="m-b-15" aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#marchandise--pallet"></use>
+                        </svg>
+                        <p class="c-text c-text--medium"><strong>Marchandises<br>sur palettes</strong></p>
+                    </li>
+                    <li class="disclaimer__item anim fadeInUp" data-wow-delay="1s">
+                        <svg class="m-b-15" aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#marchandise--heavy"></use>
+                        </svg>
+                        <p class="c-text c-text--medium"><strong>Gros volumes</strong></p>
+                    </li>
+                </ul>
+                <div class="disclaimer__anim disclaimer__anim--right" aria-hidden="true">
+                    <div class="c-line c-line--small anim bounceInRight"></div>
+                    <div class="c-line c-line--big anim bounceInRight"></div>
+                    <div class="c-line anim bounceInRight"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offers">
+            <div class="container">
+                <div class="row">
+                    <div class="card col-12 col-md-6 col-lg-4 anim fadeInLeft">
+                        <h2 class="card__title card__title--1 m-b-15">
+                            <svg aria-label="Regular">
+                                <use data-href="images/sprite.defs.svg#r--black"></use>
+                            </svg>
+                            <span aria-hidden="true">EGULAR</span>
+                        </h2>
+                        <p class="card__text c-underline c-text c-text--high c-text--center p-b-15 m-b-70">
+                            <strong>Votre livraison classique<br>n’importe où en France</strong>
+                        </p>
+                        <ul class="card__list m-b-60">
+                            <li class="c-list-item c-list-item--big c-text m-b-10">
+                                <span>Un enlèvement sur demande, ponctuel, urgent ou programmé</span>
+                            </li>
+                            <li class="c-list-item c-list-item--big c-text m-b-10">
+                                <span>La transmission en ligne et la prise en compte en temps réel des instructions de livraison</span>
+                            </li>
+                            <li class="c-list-item c-list-item--big c-text m-b-10">
+                                <span>Un service personnalisé : consignes particulières, photo en cas d’absence ou d’avarie, prise en compte d’instructions de dernière minute, …</span>
+                            </li>
+                            <li class="c-list-item c-list-item--big c-text m-b-10">
+                                <span>Des livraisons qui viennent s’inscrire dans des tournées aux trajets optimisés</span>
+                            </li>
+                            <li class="c-list-item c-list-item--big c-text m-b-10">
+                                <span>La preuve de livraison adressée immédiatement sur votre boîte mail pour des livraisons conformes</span>
+                            </li>
+                        </ul>
+                        <a href="mailto:contact@roaz.fr?subject=[Contact site Roaz]" class="c-button c-button--header">Contactez-nous</a>
+                    </div>
+                    <div class="card card--baltic card--contrast col-md-6 col-12 col-lg-4 anim fadeInLeft" data-wow-delay="0.5s" data-wow-offset="145">
+                        <h2 class="card__title card__title--2 m-b-15">
+                            <svg aria-label="Regular">
+                                <use data-href="images/sprite.defs.svg#r--red"></use>
+                            </svg>
+                            <span aria-hidden="true">ON DEMAND</span>
+                        </h2>
+                        <p class="card__text c-underline c-underline--contrast c-text c-text--high c-text--center p-b-15 m-b-70">
+                            <strong>Votre transport express<br>suivi de bout en bout</strong>
+                        </p>
+                        <p class="c-text c-text--medium c-text--center m-b-20">
+                            <b>Profitez de tous les avantages de la<br>livraison classique</b> <em>R EGULAR +</em>
+                        </p>
+                        <ul class="card__list m-b-95">
+                            <li class="c-list-item c-list-item--contrast c-list-item--big c-text m-b-10">
+                                <span>L’accès depuis votre interface par votre client destinataire au suivi intégral du colis en temps réel à chacune des étapes de la livraison pour une réactivité immédiate en cas d’imprévu</span>
+                            </li>
+                            <li class="c-list-item c-list-item--contrast c-list-item--big c-text m-b-10">
+                                <span>Une information du destinataire en cas d’absence et prise en compte des nouvelles dispositions de livraison</span>
+                            </li>
+                        </ul>
+                        <a href="mailto:mailto:contact@roaz.fr?subject=[Contact site Roaz]" class="c-button c-button--header">Contactez-nous</a>
+                    </div>
+                    <div class="card card--red col-12 col-lg-4 anim fadeInLeft" data-wow-delay="1s" data-wow-offset="190">
+                        <h2 class="card__title card__title--3 m-b-15">
+                            <svg aria-label="Regular">
+                                <use data-href="images/sprite.defs.svg#r--black"></use>
+                            </svg>
+                            <span aria-hidden="true">QUICKLY</span>
+                        </h2>
+                        <p class="card__text c-underline c-text c-text--high c-text--center p-b-15 m-b-70">
+                            <strong>Pro-activité et réactivité pour<br class="d-none">un transport urgent maitrisé</strong>
+                        </p>
+                        <p class="c-text c-text--medium c-text--center m-b-20">
+                            <b>Profitez de tous les avantages de la livraison classique</b> <em>R ON DEMAND +</em>
+                        </p>
+                        <ul class="card__list m-b-95">
+                            <li class="c-list-item c-list-item--big c-text m-b-10">
+                                <span>La prise en compte de votre degré d’urgence pour concilier rapidité et optimisation des coûts</span>
+                            </li>
+                            <li class="c-list-item c-list-item--big c-text m-b-10">
+                                <span>L’assurance d’une gestion fiable et sécurisée de vos livraisons complexes et de vos opérations spéciales (lancement de produit, nouveaux clients…)</span>
+                            </li>
+                        </ul>
+                        <a href="mailto:contact@roaz.fr?subject=[Contact site Roaz]" class="c-button c-button--header">Contactez-nous</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="values">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="values__col col-12 col-lg-6 p-b-110 anim fadeInLeft">
+                        <svg aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#values--humans"></use>
+                        </svg>
+                        <h2 class="c-title m-b-10">
+                            Nos livreurs<br>&nbsp;
+                        </h2>
+                        <p class="c-underline c-underline--big c-text c-text--big p-b-30 m-b-45">
+                            <em>Expertise et bien-être de nos salariés<br>font de vos livraison un succès.</em>
+                        </p>
+                        <p class="values__text c-text c-text--large c-text--left m-b-60">
+                            Nous mettons à votre disposition des conducteurs «&nbsp;maison&nbsp;», qui servent vos clients destinataires comme vous l’auriez fait vous-même, contribuant ainsi à votre image de marque.
+                        </p>
+                        <div class="row no-gutters">
+                            <div class="col-12 col-sm-6">
+                                <ul class="c-post-its">
+                                    <li class="c-post-its__item c-post-its__item--bordered">
+                                        <span><strong>Fiabilité et garantie</strong><br>des délais de livraison</span>
+                                    </li>
+                                    <li class="c-post-its__item c-post-its__item--contrast">
+                                        <span><strong>Transparence</strong><br>d’une information en temps réel</span>
+                                    </li>
+                                    <li class="c-post-its__item c-post-its__item--bordered">
+                                        <span><strong>Assurance</strong><br>Ad Valorem pour garantir<br>le bien transporté</span>
+                                    </li>
+                                    <li class="c-post-its__item">
+                                        <span>Des livreurs<br><strong>formés et équipés</strong><br>pour le confort et la<br>sécurité de tous</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <ul class="c-post-its">
+                                    <li class="c-post-its__item c-post-its__item--contrast">
+                                        <span><strong>Souplesse</strong><br>des enlèvements<br>et des livraisons</span>
+                                    </li>
+                                    <li class="c-post-its__item">
+                                        <span><strong>Preuve</strong><br>de livraison émargée<br>disponible immédiatement</span>
+                                    </li>
+                                    <li class="c-post-its__item c-post-its__item--bordered">
+                                        <span>Des<br><strong>livreurs ambassadeurs</strong><br>de votre image de marque<br>auprès de vos clients</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="values__col col-12 col-lg-6 p-b-110 anim fadeInRight">
+                        <svg aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#values--eco"></use>
+                        </svg>
+                        <h2 class="c-title m-b-10">
+                            Vers une livraison<br>neutre en CO2
+                        </h2>
+                        <p class="c-underline c-underline--big c-text c-text--big p-b-30 m-b-45">
+                            <em>Mesurer, réduire et compenser nos émissions<br>de CO2 sont notre priorité.</em>
+                        </p>
+                        <p class="values__text c-text c-text--large c-text--left m-b-60">
+                            Notre engagement écologique vise à inscrire chacune des livraisons que nous effectuons dans une démarche de neutralité carbone, pour tous nos clients, sans surcoût.
+                        </p>
+                        <div class="row no-gutters">
+                            <div class="col-12 col-sm-6">
+                                <ul class="c-post-its">
+                                    <li class="c-post-its__item">
+                                        <span><strong>Optimisation</strong><br> des tournées et de nos services<br>pour réduire le trafic routier</span>
+                                    </li>
+                                    <li class="c-post-its__item c-post-its__item--contrast c-post-its__item--contrast-green">
+                                        <span>Formation à<br><strong>l’éco-conduite</strong></span>
+                                    </li>
+                                    <li class="c-post-its__item c-post-its__item--bordered c-post-its__item--contrast-green">
+                                        <span><strong>Tri, collecte<br>et valorisation</strong><br>de tous nos déchets</span>
+                                    </li>
+                                    <li class="c-post-its__item c-post-its__item--contrast">
+                                        <span><strong>Amélioration</strong><br>de l’efficacité énergétique<br>de nos bâtiments</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <ul class="c-post-its">
+                                    <li class="c-post-its__item c-post-its__item--contrast c-post-its__item--contrast-green">
+                                        <span>Flotte de véhicules<br><strong>récents</strong><br>et aux carburants alternatifs</span>
+                                    </li>
+                                    <li class="c-post-its__item c-post-its__item--contrast">
+                                        <span><strong>Digitalisation</strong><br>des process</span>
+                                    </li>
+                                    <li class="c-post-its__item">
+                                        <span>Réflexion constante<br>pour améliorer nos<br><strong>services</strong><br>dans un objectif<br>environnemental</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recruitement p-t-110 p-b-55">
+            <div class="container">
+                <div class="recruitement__anim recruitement__anim--left" aria-hidden="true">
+                    <div class="c-line c-line--contrast c-line--small anim bounceInLeft"></div>
+                    <div class="c-line c-line--contrast c-line--medium anim bounceInLeft"></div>
+                    <div class="c-line c-line--contrast anim bounceInLeft"></div>
+                </div>
+                <div class="row">
+                    <div class="recruitement__col col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-0">
+                        <svg class="" aria-label="Équipe de Roaz Delivery illustrée">
+                            <use data-href="images/sprite.defs.svg#career"></use>
+                        </svg>
+                    </div>
+                    <div class="recruitement__col col-12 col-lg-8">
+                        <h2 class="recruitement__title c-title c-title--red m-b-30">
+                            Roaz delivery,<br>c’est avant tout une équipe
+                        </h2>
+                        <p class="recruitement__text c-text c-text--large c-text--left m-b-50">
+                            Fournir du matériel de qualité, un rythme de travail acceptable et un cadre motivant sont les clés que nous avons choisies pour vous offrir un service de qualité. 
+                        </p>
+                        <a href="/carrieres" class="c-button c-button--ib c-underline c-underline--medium c-underline--contrast c-underline--after"><b>Découvrez pourquoi nous rejoindre</b></a>
+                    </div>
+                </div>
+                <div class="recruitement__anim recruitement__anim--right" aria-hidden="true">
+                    <div class="c-line c-line--contrast c-line--small anim bounceInRight"></div>
+                    <div class="c-line c-line--contrast anim bounceInRight"></div>
+                    <div class="c-line c-line--contrast c-line--big anim bounceInRight"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!--#include file="partials/footer.shtml" -->

@@ -1,0 +1,125 @@
+<!--#include file="partials/header--carrieres.shtml" -->
+
+    <main>
+        <section class="introduction p-t-135 p-t-60 p-b-110">
+            <div class="container">
+                <div class="introduction__anim introduction__anim--left" aria-hidden="true">
+                    <div class="c-line c-line--small anim bounceInLeft"></div>
+                    <div class="c-line anim bounceInLeft"></div>
+                    <div class="c-line c-line--medium anim bounceInLeft"></div>
+                </div>
+                <h2 class="c-title c-title--crimson m-b-30">
+                    Des équipes expertes et passionnées
+                </h2>
+                <p class="c-text c-text--big c-square c-square--3 m-b-110">
+                    Avec plus de <strong>30 collaborateurs</strong>, nos équipes s’engagent chaque jour aux côtés de nos clients pour livrer plus de <strong>2500 colis</strong> quotidiennement.
+                </p>
+                <p class="c-text c-text--big c-text--center m-b-30">
+                    <strong>Nous avons besoin de chacun d’entre vous :</strong>
+                </p>
+                <ul class="c-post-its c-post-its--row">
+                    <li class="c-post-its__item c-post-its__item--small">
+                        <span><strong>Commercial·e exploitant</strong></span>
+                    </li>
+                    <li class="c-post-its__item c-post-its__item--small c-post-its__item--contrast">
+                        <span><strong>Responsable d’exploitation</strong></span>
+                    </li>
+                    <li class="c-post-its__item c-post-its__item--small c-post-its__item--bordered">
+                        <span><strong>Chauffeur-livreur</strong></span>
+                    </li>
+                    <li class="c-post-its__item c-post-its__item--small c-post-its__item--bordered">
+                        <span><strong>Chef·fe d’équipe transport</strong></span>
+                    </li>
+                    <li class="c-post-its__item c-post-its__item--small">
+                        <span><strong>Assistant·e d’exploitation</strong></span>
+                    </li>
+                    <li class="c-post-its__item c-post-its__item--small c-post-its__item--contrast">
+                        <span><strong>Gestionnaire de flotte</strong></span>
+                    </li>
+                </ul>
+                <div class="introduction__anim introduction__anim--right" aria-hidden="true">
+                    <div class="c-line anim bounceInRight"></div>
+                    <div class="c-line c-line--big anim bounceInRight"></div>
+                    <div class="c-line c-line--small anim bounceInRight"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="expertise p-t-110 p-b-110">
+            <div class="container">
+                <div class="expertise__anim expertise__anim--left" aria-hidden="true">
+                    <div class="c-line c-line--contrast c-line--small anim bounceInLeft"></div>
+                    <div class="c-line c-line--contrast c-line--medium anim bounceInLeft"></div>
+                    <div class="c-line c-line--contrast anim bounceInLeft"></div>
+                </div>
+                <h2 class="expertise__title c-title c-title--red c-title--center m-b-40">
+                    Votre expertise : notre ambition
+                </h2>
+                <p class="expertise__text c-text c-text--large m-b-30">
+                    Nous sommes convaincus qu’apporter le meilleur de la livraison express à nos clients passe par votre réussite. C’est pourquoi Roaz delivery vous accompagne dans votre <strong>développement professionnel</strong> tout au long de votre carrière.
+                </p>
+                <ul class="m-l-20 m-b-30">
+                    <li class="c-text c-list-item c-list-item--contrast m-b-10">
+                        <span>Nous vous proposons un parcours de formation sur-mesure pour les métiers de la livraison avec nos partenaires.</span>
+                    </li>
+                    <li class="c-text c-list-item c-list-item--contrast m-b-10">
+                        <span>Nous mettons à votre disposition une plateforme d’e-learning innovante pour faciliter votre intégration et vous former tout au long de votre parcours.</span>
+                    </li>
+                    <li class="c-text c-list-item c-list-item--contrast">
+                        <span>Nous mettons en place des outils de développement personnel pour l’ensemble de nos collaborateurs.</span>
+                    </li>
+                </ul>
+                <p class="expertise__text c-text c-text--large c-underline c-underline--contrast p-b-40">
+                    Ce sont autant de leviers pour vous permettre de vous <strong>réaliser professionnellement</strong> et ainsi mettre votre expertise au service de nos clients.
+                </p>
+                <div class="expertise__anim expertise__anim--right" aria-hidden="true">
+                    <div class="c-line c-line--contrast c-line--small anim bounceInRight"></div>
+                    <div class="c-line c-line--contrast c-line--big anim bounceInRight"></div>
+                    <div class="c-line c-line--contrast anim bounceInRight"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quality p-t-110 p-b-80">
+            <div class="container">
+                <h2 class="expertise__title c-title m-b-30">
+                    Rendre compatible qualité de vie et bien-être au travail
+                </h2>
+                <p class="expertise__text c-text c-text--large m-b-60">
+                    Nous avons à c&oelig;ur d’analyser avec vous l’ensemble de nos pratiques pour positionner l’ensemble de nos collaborateurs au centre de l’entreprise.<br>Notre engagement RSE <em>(Responsabilité Sociale et Environnementale)</em> s’inscrit entièrement dans cette démarche.
+                </p>
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-4 m-b-30">
+                        <svg class="quality__illustration" aria-hidden="true">
+                            <use data-href="images/sprite.defs.svg#values--humans"></use>
+                        </svg>
+                    </div>
+                    <div class="col-12 col-md-8 m-b-30">
+                        <h3 class="c-title c-title--red c-title--small c-square c-square--4 m-b-20">Nos préoccupations et les leviers sont variés :</h3>
+                        <ul class="quality__list">
+                            <li class="c-text c-text--medium c-list-item m-b-10">
+                                <span>Disposer d’un environnement de travail sécurisé</span>
+                            </li>
+                            <li class="c-text c-text--medium c-list-item m-b-10">
+                                <span>Former les collaborateurs aux postures de travail</span>
+                            </li>
+                            <li class="c-text c-text--medium c-list-item m-b-10">
+                                <span>Engager l’entreprise et former les salariés pour la prévention du risque routier</span>
+                            </li>
+                            <li class="c-text c-text--medium c-list-item m-b-10">
+                                <span>Optimiser et dynamiser les échanges programmés pour éviter la réunionite</span>
+                            </li>
+                            <li class="c-text c-text--medium c-list-item m-b-10">
+                                <span>Oser parler de parentalité</span>
+                            </li>
+                            <li class="c-text c-text--medium c-list-item">
+                                <span>Proscrire une politique de performance basée uniquement sur la cadence de nos livreurs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!--#include file="partials/footer.shtml" -->

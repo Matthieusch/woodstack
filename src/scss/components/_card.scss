@@ -1,0 +1,146 @@
+.card {
+    background: $gallery;
+    padding-bottom: rem(100px);
+    padding-top: rem(60px);
+    position: relative;
+
+    &--baltic {
+        background: $baltic-sea;
+    }
+    
+    &--red {
+        background: $red;
+    }
+    
+    &--contrast {
+        color: #fff;
+    }
+
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(3) {
+        @include before() {
+            background: $gallery;
+            @include position(0, auto, 0, 0);
+            transform: translateX(-100%);
+            width: 50vw;
+        }
+
+        @include after() {
+            background: $gallery;
+            @include position(0, 0, 0, auto);
+            transform: translateX(100%);
+            width: 50vw;
+        }
+    }
+
+    &:nth-child(2) {
+        &::before,
+        &::after {
+            background: $baltic-sea;
+        }
+    }
+
+    &:nth-child(3) {
+        &::before,
+        &::after {
+            background: $red;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        &:first-child {
+            position: relative;
+    
+            @include before() {
+                background: $gallery;
+                @include position(0, auto, 0, 0);
+                transform: translateX(-100%);
+                width: 50vw;
+            }
+        }
+    
+        &:nth-child(2) {
+            position: relative;
+    
+            @include before() {
+                background: $baltic-sea;
+                @include position(0, 0, 0, auto);
+                transform: translateX(100%);
+                width: 50vw;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        top: rem(90px);
+
+        &:first-child {
+            &::after {
+                content: none;
+            }
+        }
+
+        &:nth-child(2) {
+            top: rem(45px);
+
+            &::before,
+            &::after {
+                content: none;
+            }
+        }
+
+        &:nth-child(3) {
+            top: 0;
+            position: relative;
+        
+            @include before() {
+                background: $red;
+                @include position(0, 0, 0, auto);
+                transform: translateX(100%);
+                width: 50vw;
+            }
+        }
+    }
+
+    &__title {
+        @include fx();
+        font-size: rem(34px);
+        text-align: center;
+        text-transform: uppercase;
+
+        svg {
+            width: rem(80px);
+        }
+
+        span {
+            display: block;
+        }
+
+        &--1 {
+            color: $crimson;
+
+            span {
+                margin-left: rem(-35px);
+            }
+        }
+
+        &--2 {
+            display: block;
+            position: relative;
+
+            span {
+                @include fx();
+                @include position(0, 0, 0, 0);
+            }
+        }
+
+        &--3 {
+            color: #fff;
+            
+            span {
+                margin-left: rem(-60px);
+            }
+        }
+    }
+}

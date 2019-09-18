@@ -1,0 +1,37 @@
+.c-underline {
+    position: relative;
+
+    @include after() {
+        background: $baltic-sea;
+        height: rem(2px);
+        @include position(auto, auto, 0, 50%);
+        transform: translateX(-50%);
+        width: rem(40px);
+    }
+
+    &--medium {
+        &::after {
+            width: rem(48px);
+        }
+    }
+
+    &--big {
+        &::after {
+            width: rem(96px);
+        }
+    }
+
+    &--contrast {
+        &::after {
+            background: #fff;
+        }
+    }
+
+    &--after {
+        margin-bottom: rem(30px);
+        
+        &::after {
+            bottom: rem(-30px);
+        }
+    }
+}

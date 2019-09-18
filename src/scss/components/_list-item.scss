@@ -1,0 +1,27 @@
+.c-list-item {
+    @include fx(row nowrap, flex-start, flex-start);
+    
+    @include before() {
+        background: $baltic-sea;
+        height: rem(2px);
+        margin: rem(14px * 1.27 / 2) rem(10px) 0 0;
+        width: rem(18px);
+    }
+
+    span {
+        flex: 1;
+    }
+
+    &--contrast {
+        &::before {
+            background: #fff;
+        }
+    }
+
+    &--big {
+        &::before {
+            margin-right: rem(30px);
+            width: rem(23px);
+        }
+    }
+}

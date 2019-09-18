@@ -1,0 +1,42 @@
+.c-square {
+    position: relative;
+
+    @include before() {
+        background: $gallery;
+        height: rem(260px);
+        width: rem(260px);
+        z-index: -1;
+    }
+
+    &--white {
+        &::before {
+            background: #fff;
+        }
+    }
+
+    &--1 {
+        &::before {
+            @include position(rem(25px), auto, auto, rem(30px));
+            height: rem(300px);
+            width: rem(300px);
+        }
+    }
+
+    &--2 {
+        &::before {
+            @include position(rem(-85px), rem(30px), auto, auto);
+        }
+    }
+
+    &--3 {
+        &::before {
+            @include position(rem(-115px), auto, auto, rem(255px));
+        }
+    }
+
+    &--4 {
+        &::before {
+            @include position(rem(-160px), auto, auto, rem(-40px));
+        }
+    }
+}
