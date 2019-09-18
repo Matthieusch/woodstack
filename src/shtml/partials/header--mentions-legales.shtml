@@ -3,9 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Mentions légales | Roaz Delivery</title>
-        <meta description="Rejoindre la famille Roaz delivery c’est associer expertise et qualité de vie au travail dans la livraison de colis sur Rennes et en France. Rejoignez-nous !">
+        <meta name="description" content="Rejoindre la famille Roaz delivery c’est associer expertise et qualité de vie au travail dans la livraison de colis sur Rennes et en France. Rejoignez-nous !">
 
         <link rel="stylesheet" href="css/styles.min.css">
 

@@ -10,12 +10,12 @@
                         <div class="contact">
                             <a href="mailto:contact@roaz.fr?subject=[Contact site Roaz]" class="c-button">Contactez-nous</a>
                             <div class="contact__separator m-l-30 m-r-15" aria-hidden="true"></div>
-                            <a href="" class="contact__link" title="Suivez-nous sur Facebook">
+                            <a href="https://www.facebook.com/Roaz-delivery-118360106219680/" class="contact__link" title="Suivez-nous sur Facebook" target="_blank">
                                 <svg aria-hidden="true">
                                     <use data-href="images/sprite.defs.svg#icon--facebook"></use>
                                 </svg>
                             </a>
-                            <a href="" class="contact__link" title="Suivez-nous sur Twitter">
+                            <a href="https://twitter.com/Roaz_delivery" class="contact__link" title="Suivez-nous sur Twitter" target="_blank">
                                 <svg aria-hidden="true">
                                     <use data-href="images/sprite.defs.svg#icon--twitter"></use>
                                 </svg>
