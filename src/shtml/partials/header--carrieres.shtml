@@ -73,7 +73,10 @@
                         <p class="c-text c-text--large m-b-50">
                             Parmi les leaders de la livraison express à Rennes, nous recrutons en permanence de nombreux profils. 
                         </p>
-                        <a href="mailto:recrutement@roaz.fr?subject=[Candidature site ROAZ]" class="c-button c-button--header">Rejoignez-nous</a>
+                        <p class="c-text c-text--big c-text--center m-b-30">
+                            <strong>Rejoignez-nous :</strong>
+                        </p>
+                        <a href="mailto:recrutement@roaz.fr?subject=[Candidature site ROAZ]" class="c-button c-button--header">recrutement@roaz.fr</a>
                     </div>
                 </div>
             </div>
